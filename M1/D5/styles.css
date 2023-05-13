@@ -1,0 +1,68 @@
+body {
+    background-color: #e8e1d7;
+  }
+  
+  .container div {
+    display: inline-block;
+    position: relative;
+    /* Es. 10.b */
+    font-size: 1rem;
+  }
+  
+  .container div span:first-of-type {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  /* Es. 7 */
+  
+  .container div span:nth-of-type(2) {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  /* Es. 8 */
+  
+  .container div:last-child span:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translate(0%, -60%);
+  }
+  
+  /* Es. 9 */
+  
+  .container div:first-child span:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(0%, -50%);
+  }
+  
+  /* Es. 10 */
+  
+  .container {
+    font-size: 0;
+  }
+  
+  .container div:nth-child(2n) {
+    border: 1px solid red;
+  }
+  
+  .container div:nth-child(2n+1) span:nth-child(2n){
+    color: green;
+  }
+  
+  .container div:nth-child(2) span:last-of-type {
+    color: blue;
+  }
+  
+  .container div:nth-child(6) span:not(:last-of-type) {
+    color: yellow;
+  }
+  
+  

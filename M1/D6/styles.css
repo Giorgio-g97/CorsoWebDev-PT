@@ -1,0 +1,120 @@
+/* Parte 1: imposto transition allo shadow nel main-container e ho dato background black per dare effetto opaco nella parte 2 */
+.card-container {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    border-radius: 30px;
+    transition: box-shadow .3s;
+    box-shadow: 0px 0px 20px gray;
+    background-color: black;
+}
+
+.card-container:hover {
+    box-shadow: 3px 3px 20px black;
+}
+
+/* Parte 2: imposto transition opacity e scale all'immagine */
+
+.card-container img {
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: opacity, transform, .3s;
+}
+
+.card-container:hover img {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+/* Parte 3: ho settato le icone e impostato le transition top e left */
+
+.fa-solid {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    padding: 0.5rem;
+}
+
+/* Parte 3.b: setto il link e le icone */
+
+.link .fa-solid {
+    cursor: default;
+    user-select: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 24px;
+    opacity: 0.7;
+    padding: 0.3rem;
+}
+
+/* DA SISTEMARE */
+
+.link p {
+    width: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fa-arrow-up-from-bracket {
+    transition: top .3s;
+    top: 100%;
+    left: 70%;
+}
+
+.card-container:hover .fa-arrow-up-from-bracket {
+    top: 89%;
+}
+
+.fa-ellipsis {
+    transition: top .3s;
+    top: 100%;
+    left: 85%;
+}
+
+.card-container:hover .fa-ellipsis {
+    top: 89%;
+}
+
+/* Setto transition link */
+
+.fa-arrow-up-right-from-square {
+    transition: top .3s;
+    top: 100%;
+    left: 5%;
+}
+
+.card-container:hover .fa-arrow-up-right-from-square {
+    top: 90%;
+}
+
+/* Parte 4: ho settato Save button e impostato transition come le icons */
+
+.save {
+    cursor: default;
+    user-select: none;
+    background-color: #e60023;
+    color: white;
+    border-radius: 24px;
+    padding: 0.3em;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    position: absolute;
+    z-index: 2;
+    transition: top .3s;
+    top: -10%;
+    left: 80%;
+}
+
+.card-container:hover .save {
+    top: 3%;
+    left: 80%;
+}

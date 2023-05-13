@@ -1,0 +1,143 @@
+.bg-dark {
+    background-color: #222f3e;
+  }
+  .bg-light-dark {
+    background-color: #364759;
+  }
+  .bg-green {
+    background-color: #469576;
+  }
+  .bg-yellow {
+    background-color: #f56600;
+  }
+  .color-white {
+    color: #eaeded;
+  }
+  .mb-2 {
+    margin-bottom: 2rem;
+  }
+  header div {
+    padding: 0.5rem 2rem;
+  }
+  header img {
+    height: 40px;
+  }
+  header span {
+    margin-right: 1rem;
+    font-weight: 400;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  w-100 {
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  main {
+    background-color: #eaeded;
+    padding: 2rem;
+  }
+
+  .row {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+  }
+  .img {
+    width: 304px;
+    height: 379px;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
+  }
+  .title-container {
+    text-align: left;
+    padding: 1rem 1rem 0 1.5rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-weight: 600;
+    color: #007185;
+    margin-left: 1rem;
+  }
+  .card {
+    background-color: white;
+  }
+  #img-fw {
+    width: 100%;
+  }
+  .img_container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+  #back-to-top {
+    padding: 1rem;
+  }
+  #back-to-top a {
+    font-weight: 600;
+  }
+  #footer-logo {
+    padding: 4rem;
+  }
+  #footer-logo img {
+    height: 60px;
+  }
+  #bg-image {
+    background-image: url("assets/bg-image.png");
+    width: 100%;
+    height: 100px;
+  }
+.cards-container {
+display: inline-block;
+margin: 3rem 0;
+width: 24%;
+}
+
+.cards {
+background-color: white;
+margin: 0 7px;
+padding: 1rem 2rem;
+}
+
+.card-body {
+padding: 1rem 0;
+}
+
+.img-container {
+position: relative;
+display:inline-block;
+width: 45%;
+}
+
+.card-row img {
+width: 100%;
+}
+
+.new {
+position: absolute;
+}
+
+.card-row .img-container img.new {
+width: 30%;
+left: 70%;
+top: 50%;
+}
+
+.card-footer a {
+font-weight: bold;
+color: #007185;
+}

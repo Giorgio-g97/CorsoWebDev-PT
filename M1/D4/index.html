@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="w-100">
+      <div class="bg-dark">
+        <img src="./assets/logo.png" />
+      </div>
+
+      <div class="bg-light-dark color-white">
+        <span>All</span>
+        <span>Today's deals</span>
+        <span>Customer Service</span>
+        <span>Registry</span>
+        <span>Gift Cards</span>
+        <span>Sell</span>
+      </div>
+    </header>
+    <main>
+      <div
+        class="bg-yellow text-center color-white mb-2"
+        style="padding: 0.5rem"
+      >
+        <span>Shop All Holiday Gift Cards</span>
+      </div>
+      <div
+        id="bg-image"
+        class="mb-2 color-white text-center"
+        style="padding: 3rem 0"
+      >
+        <h1>Holiday Gift Guides</h1>
+        <h3>Be a go-gifter</h3>
+      </div>
+      <div class="row">
+        <div class="title-container">
+          <span class="title">Find the perfect gift!!!</span>
+          <span class="subtitle">Shop now</span>
+        </div>
+
+        <img class="img" src="assets/img_1.jpg" />
+        <img class="img" src="assets/img_2.jpg" />
+        <img class="img" src="assets/img_3.jpg" />
+        <img class="img" src="assets/img_4.jpg" />
+      </div>
+      
+      <div class="cards-container">
+        <div class="cards">
+          <h3>Title Card</h3>
+          <div class="card-body">
+            <div class="card-row">
+              <div class="img-container">
+                <img class="new" src="data:image/png;base64,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"/>
+                <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-1</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-2</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-3</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-4</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a>See more</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cards-container">
+        <div class="cards">
+          <h3>Title Card</h3>
+          <div class="card-body">
+            <div class="card-row">
+              <div class="img-container">
+                <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-1</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-2</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-3</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-4</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a>See more</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cards-container">
+        <div class="cards">
+          <h3>Title Card</h3>
+          <div class="card-body">
+            <div class="card-row">
+              <div class="img-container">
+                <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-1</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-2</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-3</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-4</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a>See more</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cards-container">
+        <div class="cards">
+          <h3>Title Card</h3>
+          <div class="card-body">
+            <div class="card-row">
+              <div class="img-container">
+                <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-1</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-2</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-3</p>
+              </div>
+              <div class="img-container">
+              <img src="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png">
+              <p>img-4</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a>See more</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="img_container">
+        <img id="img-fw" src="assets/img_9.png" />
+        <span class="title">Play the gifting game</span>
+        <span class="subtitle">Shop gaming</span>
+      </div>
+      <div class="img_container">
+        <img id="img-fw" src="assets/img_10.png" />
+        <span class="title">The sound of cheer</span>
+        <span class="subtitle">Shop Audio & Accessories</span>
+      </div>
+    </main>
+
+    <footer>
+      <div id="back-to-top" class="bg-light-dark">
+        <a class="color-white" href="#">Back to top</a>
+      </div>
+      <div id="footer-logo" class="bg-dark w-100">
+        <img src="assets/logo.png" />
+      </div>
+    </footer>
+  </body>
+</html>
