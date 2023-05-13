@@ -50,19 +50,14 @@
     cursor: default;
     user-select: none;
     position: absolute;
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background-color: white;
     border-radius: 24px;
     opacity: 0.7;
     padding: 0.3rem;
-}
-
-/* DA SISTEMARE */
-
-.link p {
-    width: 10%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .fa-arrow-up-from-bracket {
