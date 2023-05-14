@@ -1,6 +1,10 @@
+/* imposto body e html margin 0 per bug fix scroll */
+
 body, html {
     margin: 0;
 }
+
+/* do al banner div un background e applico filter blur 100px, position absolute per renderlo applicabile a tutto il body */
 
 .banner {
     position: absolute;
