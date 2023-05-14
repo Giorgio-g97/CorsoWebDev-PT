@@ -2,6 +2,7 @@
 
 body, html {
     margin: 0;
+    font-family: 'Noto Sans Nandinagari', sans-serif;
 }
 
 /* do al banner div un background e applico filter blur 100px, position absolute per renderlo applicabile a tutto il body */
