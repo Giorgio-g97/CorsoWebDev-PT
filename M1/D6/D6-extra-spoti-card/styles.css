@@ -42,6 +42,32 @@ body, html {
     transition: opacity, transform, .3s;
 }
 
+.play-cont span {
+    position: absolute;
+    top: 83%;
+    left: -20%;
+    z-index: 3;
+    font-size: 4rem;
+    background-color: green;
+    color: black;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform .3s;
+}
+
+.album-info {
+    position: absolute;
+    z-index: 4;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+.album-info h3,p {
+    margin: 0 0;
+}
+
 /* TRANSITIONS */
 
 /* Quando passi sul container album, applica transizione all'immagine */
@@ -56,27 +82,6 @@ body, html {
     transform: scale(1.1);
 }
 
-.play-cont span {
-    position: absolute;
-    top: 83%;
-    left: 3%;
-    z-index: 3;
-    font-size: 4rem;
-    background-color: green;
-    color: black;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.album-info {
-    position: absolute;
-    z-index: 4;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    text-align: center;
-}
-
-.album-info h3,p {
-    margin: 0 0;
+.album-cont:hover .play-cont span {
+    transform: translate(120%, 0%);
 }
