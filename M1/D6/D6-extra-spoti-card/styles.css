@@ -12,7 +12,7 @@ body, html {
     z-index: 0;
     width: 100%;
     height: 100%;
-  background: url(https://i.scdn.co/image/ab67616d0000b273e6c00a33e177b5ac93defd6a);
+  background-image: url(https://i.scdn.co/image/ab67616d0000b273e6c00a33e177b5ac93defd6a);
     filter: blur(100px);
 }
 
@@ -36,11 +36,14 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity .3s;
+    transition: opacity, transform, .3s;
 }
 
-.album-cont img:hover {
+/* Quando passi sul container album, applica transizione all'immagine */
+
+.album-cont:hover img {
     opacity: .5;
+    transform: scale(1.1);
 }
 
 .album-info {
@@ -50,4 +53,8 @@ body, html {
     left: 50%;
     transform: translate(-50%, 0%);
     text-align: center;
+}
+
+.album-info h3,p {
+    margin: 0 0;
 }
