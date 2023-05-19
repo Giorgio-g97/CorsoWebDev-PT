@@ -97,10 +97,9 @@ html {
     color: gray;
   }
   .news-title p {
-    /* Test wrap ellipsis */
-    /*text-overflow: ellipsis;
+    text-overflow: ellipsis;
     overflow:hidden;
-    white-space: normal;*/
+    white-space: normal;
   }
   
   .news-user span {
