@@ -1,193 +1,296 @@
 html {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
-    margin: 0 45px;
-    background-color: #f2f2f2;
-  }
-  
-  header {
-      position: fixed;
-      width: 100%;
-      height: 60px;
-      background: white;
-      top: 0px;
-      left: 0;
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  .header-logo {
-      position: relative;
-      left: 40px;
-  }
-  
-  .search-bar {
-      position: relative;
-      right: 40px;
-      width: 400px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-  }
-  
-  button {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 24px;
-    padding: 0.5rem;
-  }
-  
-  .search-user {
-    background-color: darkorange;
-    color: white;
-    border-radius: 50%;
-    height: 33px;
-    width: 33px;
-    /* c'è un'alternativa che abbiamo già visto a lezione a line-height? */
-    line-height: 33px;
-    text-align: center;
-  }
-  
-  main {
-    display: flex;
-  }
-  
-  .news {
-    width: 70%;
-    margin-top: 130px;
-  }
-  
-  .news-header {
-    width: 90%;
-    color: gray;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #bababa;
-    padding-bottom: 1rem; /* imposto lo stesso padding-bottom a span per far coincidere la linea */
-  }
-  
-  .news-header span {
-    padding-bottom: 1rem;
-    margin-right: 1rem;
-  }
-  
-  .news-header span:nth-child(2) {
-    color: black;
-    font-weight: bold;
-    border-bottom: 1px solid #303030;
-  }
-  
-  .news-main {
-    width: 90%
-  }
-  
-  .news-cont {
-    display: flex;
-    align-items: center;
-  }
-  
-  .news-title {
-    width: 70%;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .news-title span, p {
-    color: gray;
-  }
-  .news-title p {
-    text-overflow: ellipsis;
-    overflow:hidden;
-    white-space: normal;
-  }
-  
-  .news-user span {
-    color:black;
-    font-weight: bold;
-  }
-  
-  .news-footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nf-left{
-      width: 55%;
-      display: flex;
-      justify-content: space-between;
-        align-items: center;
-  }
-  
-  .nf-left span:nth-child(3) {
-      background-color: lightgray;
-      padding: 0.4em;
-      border-radius: 24px;
-  }
-  
-  .nf-right {
-      display: flex;
-      width: 10%;
-      justify-content: space-around;
-  }
-  
-  .news-img {
-    width: 30%;
-  }
-  
-  .news-img img {
-    width: 100%;
-  }
-  
-  .news-side {
-    margin-top: 80px;
-    width: 30%;
-  }
-  
-  .social {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-        align-items: center;
-      height: 33%;
-      text-align: center;
-      font-size: 1.3rem;
-  }
-  
-  .social div {
-      display: flex;
-      height: 33%;
-      width: 100%;
-      justify-content: space-evenly;
-      align-items: center;
-  }
-  
-  .social div span {
-    font-size: 2em;
-  }
-  
-  .social div img {
-      height: 50%;
-      margin: 0 0.5em;
-  }
-  
-  .social button {
-      width: 250px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .social button span {
-    width: 10%;
-  }
-  
-  .social button span img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .maybe{
-    text-decoration: underline;
-  }
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0 45px;
+  background-color: #f2f2f2;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: white;
+  top: 0px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  position: relative;
+  left: 40px;
+}
+
+.search-bar {
+  position: relative;
+  right: 40px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 24px;
+  padding: 0.5rem;
+}
+
+.search-user {
+  background-color: darkorange;
+  color: white;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  /* c'è un'alternativa che abbiamo già visto a lezione a line-height? */
+  line-height: 33px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+}
+
+.news {
+  width: 70%;
+  margin-top: 130px;
+}
+
+.news-header {
+  width: 90%;
+  color: gray;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 1rem;
+  /* imposto lo stesso padding-bottom a span per far coincidere la linea */
+}
+
+.news-header span {
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.news-header span:nth-child(2) {
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #303030;
+}
+
+.news-main {
+  width: 85%
+}
+
+.news-cont {
+  display: flex;
+  align-items: center;
+}
+
+.news-title {
+  width: 80%;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.news-title span,
+p {
+  color: gray;
+}
+
+.news-title p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.news-user span {
+  color: black;
+  font-weight: bold;
+}
+
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nf-left {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nf-left span:nth-child(3) {
+  background-color: lightgray;
+  padding: 0.4em;
+  border-radius: 24px;
+}
+
+.nf-right {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+}
+
+.news-img {
+  width: 30%;
+}
+
+.news-img img {
+  width: 100%;
+}
+
+.news-side {
+  margin-top: 80px;
+  width: 25%;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 33%;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.social div {
+  display: flex;
+  height: 33%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social div span {
+  font-size: 2em;
+}
+
+.social div img {
+  height: 50%;
+  margin: 0 0.5em;
+}
+
+.social button {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social button span {
+  width: 10%;
+}
+
+.social button span img {
+  width: 100%;
+  height: 100%;
+}
+
+.maybe {
+  text-decoration: underline;
+}
+
+.recom {
+  height: 20%;
+}
+
+.recom p:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+.recom-tags {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recom-tags span {
+  background-color: #dbdbdbf5;
+  border-radius: 24px;
+  color: black;
+  padding: 0.5em;
+  margin: 0.2em 0.1em;
+}
+
+.follow {
+  height: 20%;
+}
+
+.follow-users {
+  margin: 0.3em 0;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follow-u {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.follow-u .fa-regular {
+  font-size: 2em;
+  margin-right: 0.3em;
+}
+
+.follow-bio p:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+.follow-bio p {
+  margin: 0.3em 0;
+}
+
+.rec-saved-box p span {
+  color: black;
+  font-weight: bold;
+}
+
+.rec-s-art {
+  margin: 1em 0;
+}
+
+.rec-s-art p {
+  margin: 0.3em 0;
+}
+
+.rec-a-title {
+  display: flex;
+  align-items: center;
+}
+
+.rec-a-footer {
+  width: 50%;
+  display: flex;
+}
+
+.rec-a-footer p {
+  margin-right: 0.4em;
+}
+
+.rec-s-footer {
+  margin: 2em 0 4em 0;
+}
+
+.rec-s-footer p {
+  color: green;
+}
+
+footer {
+  width: 59%;
+  height: 20%;
+  padding: 2em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
