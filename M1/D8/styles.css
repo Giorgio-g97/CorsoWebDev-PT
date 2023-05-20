@@ -40,7 +40,7 @@ header {
 
 button {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 24px;
   padding: 0.5rem;
 }
@@ -62,14 +62,14 @@ main {
 
 .news {
   width: 70%;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 .news-header {
   font-size: 1.2em;
   width: 95%;
   color: gray;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #bababa;
   padding-bottom: 1rem;
   /* imposto lo stesso padding-bottom a span per far coincidere la linea */
@@ -86,6 +86,8 @@ main {
   border-bottom: 1px solid #303030;
 }
 
+/* QUI INIZIANO LE NEWS */
+
 .news-main {
   width: 95%
 }
@@ -101,9 +103,14 @@ main {
   margin-bottom: 2rem;
 }
 
+.news-title h1 {
+  margin: 0.2em 0;
+}
+
 .news-title span,
 p {
   color: gray;
+  margin: 0;
 }
 
 .news-title p {
@@ -118,7 +125,7 @@ p {
 }
 
 .news-user ion-icon {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-right: 0.2em;
 }
 
@@ -130,6 +137,7 @@ p {
 .news-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nf-left {
@@ -170,11 +178,18 @@ p {
   padding-left: 3em;
 }
 
+.news-side > div {
+  margin-top: 2em;
+}
+
+/* PARTE SOCIAL */
+
 .social {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  height: 20%;
+  height: 15%;
   text-align: center;
   font-size: 1.3rem;
   border-bottom: 1px solid lightgray;
@@ -182,27 +197,25 @@ p {
 
 .social div {
   display: flex;
-  height: 30%;
+  height: 20%;
+  font-size: 1em;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .social p {
   margin: 1em 0;
-}
-
-.social div span {
-  font-size: 2em;
+  font-size: 0.8em;
 }
 
 .social div img {
-  height: 50%;
-  margin: 0 0.5em;
+  height: 100%;
+  margin: 0 0.2em;
 }
 
 .social button {
-  width: 250px;
-  height: 50px;
+  width: 210px;
+  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,8 +234,10 @@ p {
   text-decoration: underline;
 }
 
+/* PARTE TOPICS RACCOMANDATI */
+
 .recom {
-  height: 20%;
+  height: 10%;
 }
 
 .recom p:first-child {
@@ -231,6 +246,7 @@ p {
 }
 
 .recom-tags {
+  margin-top: 1em;
   width: 85%;
   display: flex;
   flex-wrap: wrap;
@@ -241,11 +257,18 @@ p {
   border-radius: 24px;
   color: black;
   padding: 0.5em;
-  margin: 0.2em 0.1em;
+  margin: 0.2em 0.2em;
 }
 
-.follow {
-  height: 20%;
+/* PARTE FOLLOW */
+
+.follow p:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+.follow > div {
+  margin-top: .5em;
 }
 
 .follow-users {
@@ -275,6 +298,8 @@ p {
   margin: 0.3em 0;
 }
 
+/* PARTE SAVED */
+
 .rec-saved-box p span {
   color: black;
   font-weight: bold;
@@ -294,16 +319,18 @@ p {
 }
 
 .rec-a-footer {
-  width: 50%;
   display: flex;
+  align-items: center;
 }
 
-.rec-a-footer p {
+.rec-a-footer span {
+  margin-top: 0.5em;
   margin-right: 0.4em;
+  color: gray;
 }
 
 .rec-s-footer {
-  margin: 2em 0 3em 0;
+  margin: 3em 0 4em 0;
 }
 
 .rec-s-footer p {
@@ -316,7 +343,7 @@ footer {
   padding: 1em 0;
 }
 
-footer span {
+footer span {    
   color: gray;
-  margin: 0 2em 0.5em 0;
+  margin: 0 1.1em .9em 0;
 }
