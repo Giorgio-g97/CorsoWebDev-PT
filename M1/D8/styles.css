@@ -96,6 +96,7 @@ main {
 .news-cont {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 .news-title {
@@ -106,6 +107,7 @@ main {
 
 .news-title h1 {
   margin: 0.2em 0;
+  font-size: 1.6em;
 }
 
 .news-title span,
@@ -136,6 +138,7 @@ p {
 }
 
 .news-footer {
+  margin-top: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,12 +170,10 @@ p {
   font-size: 1.5em;
 }
 
-.news-img {
-  width: 30%;
-}
-
 .news-img img {
-  width: 100%;
+  width: 210px;
+  height: 130px;
+  object-fit: cover;
 }
 
 /* QUI INIZIA SIDEBAR */
