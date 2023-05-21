@@ -3,15 +3,22 @@ html {
 }
 
 body {
-  padding: 0 8em;
+  padding: 0 8em;       /* IMPOSTO UN PADDING PER "CENTRARLO" */
   background-color: white;
 }
 
 /* QUI RENDO I PULSANTI INTERATTIVI */
-main span, main h1, main ion-icon, header ion-icon, main button {
+
+/* ABILITO IL CURSORE RENDENDOLO "CLICCABILE" */
+main span,
+main h1,
+main ion-icon,
+header ion-icon,
+main button {
   cursor: pointer;
 }
 
+/* AGGIUNGO ANIMAZIONI AL PASSAGGIO DEL MOUSE */
 .tag {
   transition: background-color .3s;
   background-color: #F2F2F2;
@@ -33,13 +40,15 @@ button:hover {
   border: 1px solid black;
 }
 
-.search-bar ion-icon, .nf-right ion-icon {
+.search-bar ion-icon,
+.nf-right ion-icon {
   transition: color .3s, font-size, .1s;
   font-size: 1.7em;
-  color:gray;
+  color: gray;
 }
 
-.search-bar ion-icon:hover, .nf-right ion-icon:hover {
+.search-bar ion-icon:hover,
+.nf-right ion-icon:hover {
   color: initial;
   font-size: 1.8em;
 }
@@ -67,10 +76,9 @@ button:hover {
 }
 
 header {
-  position: fixed;
-  z-index: 1;
+  position: fixed; /* PER FISSARE IN ALTO L'HEADER */
+  z-index: 1;      /* IMPOSTATO A 1 PERCHE' LE ICONE SI SVRAPPONEVANO */
   width: 100%;
-  height: 70px;
   background: white;
   top: 0px;
   left: 0px;
@@ -81,7 +89,6 @@ header {
 
 .header-logo {
   width: 250px;
-  height: auto;
   padding-left: 8em;
 }
 
@@ -109,15 +116,8 @@ main {
 }
 
 .news {
-  width: 70%;
   margin-top: 100px;
 }
-
-/* .news-header span:nth-child(2) {
-  color: black;
-  font-weight: bold;
-  border-bottom: 1px solid #303030;
-} */
 
 /* QUI INIZIANO LE NEWS */
 
@@ -210,9 +210,13 @@ p {
 
 aside {
   border-left: 1px solid lightgray;
-  margin-top: 60px;
   width: 25%;
   padding-left: 3em;
+}
+
+aside p:first-child {
+  color: black;
+  font-weight: bold;
 }
 
 .news-side {
@@ -220,7 +224,7 @@ aside {
   top: 100px;
 }
 
-.news-side > div {
+.news-side>div {
   margin-top: 2em;
 }
 
@@ -229,9 +233,7 @@ aside {
 .social {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: 15%;
   text-align: center;
   font-size: 1.3rem;
   border-bottom: 1px solid lightgray;
@@ -239,9 +241,6 @@ aside {
 
 .social div {
   display: flex;
-  height: 20%;
-  font-size: 1em;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -257,7 +256,6 @@ aside {
 
 .social button {
   width: 210px;
-  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,39 +277,24 @@ aside {
   font-size: 0.8em;
 }
 
-/* PARTE TOPICS RACCOMANDATI */
-
-.recom {
-  height: 10%;
-}
-
-.recom p:first-child {
-  color: black;
-  font-weight: bold;
-}
+/* PARTE TOPICS CONSIGLIATI */
 
 .recom-tags {
   margin-top: 1em;
-  width: 100%;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .recom-tags span {
   border-radius: 24px;
-  color: black;
   padding: 0.5em;
   margin: 0.2em 0.2em;
 }
 
 /* PARTE FOLLOW */
 
-.follow p:first-child {
-  font-weight: bold;
-  color: black;
-}
-
-.follow > div {
+.follow>div {
   margin-top: .5em;
 }
 
@@ -387,7 +370,7 @@ footer {
   padding: 1em 0;
 }
 
-footer span {    
+footer span {
   color: gray;
   margin: 0 1.1em .9em 0;
 }
