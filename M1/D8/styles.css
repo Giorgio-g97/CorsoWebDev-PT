@@ -7,6 +7,65 @@ body {
   background-color: white;
 }
 
+/* QUI RENDO I PULSANTI INTERATTIVI */
+main span, main h1, main ion-icon, header ion-icon, main button {
+  cursor: pointer;
+}
+
+.tag {
+  transition: background-color .3s;
+  background-color: #F2F2F2;
+}
+
+.tag:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+button {
+  transition: border .3s;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 0.5rem;
+}
+
+button:hover {
+  border: 1px solid black;
+}
+
+.search-bar ion-icon, .nf-right ion-icon {
+  transition: color .3s, font-size, .1s;
+  font-size: 1.7em;
+  color:gray;
+}
+
+.search-bar ion-icon:hover, .nf-right ion-icon:hover {
+  color: initial;
+  font-size: 1.8em;
+}
+
+.news-header span {
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 1.09rem;
+  margin-right: 1rem;
+  transition: color, border-bottom, .3s;
+}
+
+.news-header {
+  font-size: 1.2em;
+  width: 95%;
+  color: gray;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 1rem;
+  /* imposto lo stesso padding-bottom a span per far coincidere la linea */
+}
+
+.news-header span:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
 header {
   position: fixed;
   z-index: 1;
@@ -34,18 +93,6 @@ header {
   padding-right: 8em;
 }
 
-.search-bar ion-icon {
-  font-size: 1.7em;
-  color:gray;
-}
-
-button {
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 24px;
-  padding: 0.5rem;
-}
-
 .search-user {
   background-color: darkorange;
   color: white;
@@ -66,26 +113,11 @@ main {
   margin-top: 100px;
 }
 
-.news-header {
-  font-size: 1.2em;
-  width: 95%;
-  color: gray;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #bababa;
-  padding-bottom: 1rem;
-  /* imposto lo stesso padding-bottom a span per far coincidere la linea */
-}
-
-.news-header span {
-  padding-bottom: 1rem;
-  margin-right: 1rem;
-}
-
-.news-header span:nth-child(2) {
+/* .news-header span:nth-child(2) {
   color: black;
   font-weight: bold;
   border-bottom: 1px solid #303030;
-}
+} */
 
 /* QUI INIZIANO LE NEWS */
 
@@ -128,7 +160,7 @@ p {
 }
 
 .news-user ion-icon {
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-right: 0.2em;
 }
 
@@ -155,7 +187,7 @@ p {
 }
 
 .nf-left span:nth-child(5) {
-  background-color: #F2F2F2;
+  color: black;
   padding: 0.4em;
   border-radius: 24px;
 }
@@ -164,10 +196,6 @@ p {
   display: flex;
   width: 12%;
   justify-content: space-between;
-}
-
-.nf-right ion-icon {
-  font-size: 1.5em;
 }
 
 .news-img img {
@@ -246,6 +274,9 @@ aside {
 
 .maybe {
   text-decoration: underline;
+  color: gray;
+  margin: 1em 0;
+  font-size: 0.8em;
 }
 
 /* PARTE TOPICS RACCOMANDATI */
@@ -267,7 +298,6 @@ aside {
 }
 
 .recom-tags span {
-  background-color: #F2F2F2;
   border-radius: 24px;
   color: black;
   padding: 0.5em;
@@ -347,7 +377,7 @@ aside {
   margin: 3em 0 4em 0;
 }
 
-.rec-s-footer p {
+.rec-s-footer span {
   color: green;
 }
 
