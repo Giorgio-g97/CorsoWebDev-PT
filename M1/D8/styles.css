@@ -345,9 +345,12 @@ aside p:first-child {
   align-items: center;
 }
 
+.rec-a-title ion-icon {
+  margin-right: 0.5em;
+}
+
 .rec-a-footer {
   display: flex;
-  align-items: center;
 }
 
 .rec-a-footer span {
