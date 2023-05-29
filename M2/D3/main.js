@@ -63,4 +63,7 @@ else if(a+b==8){
 }
 else{console.log('nada')}
 
-//
+// Es. extra-2
+let totalShoppingCart = 49;
+if(totalShoppingCart>=50){console.log('Totale pagamento: ', totalShoppingCart, 'Spedizione gratuita!')}
+else{totalShoppingCart += 10; console.log('Totale pagamento: ', totalShoppingCart);}
