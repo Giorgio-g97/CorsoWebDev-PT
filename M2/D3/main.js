@@ -67,3 +67,15 @@ else{console.log('nada')}
 let totalShoppingCart = 49;
 if(totalShoppingCart>=50){console.log('Totale pagamento: ', totalShoppingCart, 'Spedizione gratuita!')}
 else{totalShoppingCart += 10; console.log('Totale pagamento: ', totalShoppingCart);}
+
+// Es. extra-3
+let totalShoppingCart = 49;
+let sales20 = (totalShoppingCart/100)*20;
+let totalsalesCart = totalShoppingCart - sales20;
+if(totalShoppingCart>=50){
+  console.log('Totale pagamento: ', totalsalesCart, 'Spedizione gratuita!');
+}
+else{
+  totalsalesCart += 10;
+  console.log('Totale pagamento: ', totalsalesCart);
+}
