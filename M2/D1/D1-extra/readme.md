@@ -26,7 +26,7 @@ Si fa mettendo la parola tra due asterischi `**`
 Si fa mettendo la parentesi angolare (minore `>`)
 > prova 
 
-# Blocco di codice
+# Parti di codice
 Si applica mettendo il codice tra due backtick (``)
 
 Es. `background-color: black;`
@@ -45,3 +45,12 @@ Es. in basso
 
 ![alt text](https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80)
 
+# Blocco di codice
+
+Si applica con triplo backtick (```)
+
+ ```
+ header {
+    background-color: black
+}
+```
