@@ -47,35 +47,52 @@ for (i = 0; i <= 15; i++) {
 let a = 0;
 let b = 10;
 // inizio con le condizioni
-if(a == 8){console.log('Primo valore: ', a)}
-else if(b == 8){console.log('Secondo valore: ', b)}
-else if(a-b==8){
-  let dif = a-b;
-  console.log('Stampo differenza: ', dif);
+if (a == 8) { console.log('Primo valore: ', a) }
+else if (b == 8) { console.log('Secondo valore: ', b) }
+else if (a - b == 8) {
+    let dif = a - b;
+    console.log('Stampo differenza: ', dif);
 }
-else if(b-a==8){
-  let dif = b-a;
-  console.log('Stampo differenza: ', dif);
+else if (b - a == 8) {
+    let dif = b - a;
+    console.log('Stampo differenza: ', dif);
 }
-else if(a+b==8){
-  let sum = a+b;
-  console.log('Stampo somma: ', sum)
+else if (a + b == 8) {
+    let sum = a + b;
+    console.log('Stampo somma: ', sum)
 }
-else{console.log('nada')}
+else { console.log('nada') }
 
 // Es. extra-2
 let totalShoppingCart = 49;
-if(totalShoppingCart>=50){console.log('Totale pagamento: ', totalShoppingCart, 'Spedizione gratuita!')}
-else{totalShoppingCart += 10; console.log('Totale pagamento: ', totalShoppingCart);}
+if (totalShoppingCart >= 50) { console.log('Totale pagamento: ', totalShoppingCart, 'Spedizione gratuita!') }
+else { totalShoppingCart += 10; console.log('Totale pagamento: ', totalShoppingCart); }
 
 // Es. extra-3
 let totalShoppingCart = 49;
-let sales20 = (totalShoppingCart/100)*20;
+let sales20 = (totalShoppingCart / 100) * 20;
 let totalsalesCart = totalShoppingCart - sales20;
-if(totalShoppingCart>=50){
-  console.log('Totale pagamento: ', totalsalesCart, 'Spedizione gratuita!');
+if (totalShoppingCart >= 50) {
+    console.log('Totale pagamento: ', totalsalesCart, 'Spedizione gratuita!');
 }
-else{
-  totalsalesCart += 10;
-  console.log('Totale pagamento: ', totalsalesCart);
+else {
+    totalsalesCart += 10;
+    console.log('Totale pagamento: ', totalsalesCart);
+}
+
+// Es. extra-4
+let gender
+let isMale = false
+isMale == true ? gender = 'male' : gender = 'female'
+console.log(gender);
+
+// Es. extra-5
+for (let i = 0; i < 100; i++) {
+    if (i % 3 === 0) {
+        console.log('Fizz')
+    } else if (i % 5 === 0) {
+        console.log('Buzz')
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz')
+    }
 }
