@@ -37,3 +37,5 @@ const amy = {
 const prices = [34, 5, 2]
 const shippingCost = 50
 let utenteCheEffettuaLAcquisto = amy //cambia il valore qui per provare se il tuo algoritmo funziona!
+
+// Step 1: creo array di elementi 
