@@ -52,11 +52,42 @@ let indice = clienti.indexOf(clienteCercato)
 (indice !== -1) ? console.log(`L'utente ${clienteCercato} trovato all'indice ${indice}`)
 : console.log(`L'utente ${clienteCercato} non è stato trovato.`)
 ```
-
+Funzione `lastIndexOf` - trova il numero cercato all'ultimo indice all'interno dell'array (se c'è più di uno troverà sempre l'ultimo)
 ```
-/* Last Index Of */
 let numeri = [1,2,5,6,74,3]
 let numeroDaTrovare = 1
 let ultimoIndice = numeri.lastOfIndex(numeroDaTrovare)
 console.log(`L'ultima occorrenza in cui esce il numero ${numeroDaTrovare} è all'indice ${ultimoIndice}`)
+```
+La funzione `pop` ci permette di rimuovere **l'ultimo** elemento di un array
+```
+let prodottiVendita = ['scarpe', 'cappelli', 'calze']
+let rimuoviProdotto = prodottiVendita.pop()
+console.log('Prodotti in vendita: ', prodottiVendita)
+console.log('Prodotti rimossi: ', rimuoviProdotto)
+```
+Il `push` invece aggiunge elementi ad un array verso la fine
+```
+prodottiVendita.push('giacche', 'cravatte')
+console.log(prodottiVendita) // Aggiunge giacche e cravatte verso la fine dell'array
+```
+Lo `slice` seleziona un determinato range all'interno di un array dichiarando l'indice di inizio **incluso** e quello di fine **escluso**
+```
+let prodottiVendita = ['scarpe', 'cappelli', 'calze','giacche', 'cravatte']
+prodottiAggiornati = prodottiVendita.slice(1,3)
+console.log(prodottiAggiornati) // ['cappelli', 'calze']
+```
+Se devi prendere un range fino all'ultimo elemento, dato che l'indice di fine è **escluso** utilizzi l'elemento `.length` che sarà sempre **l'ultimo indice+1**.
+Es. 
+```
+let prodottiVendita = ['scarpe', 'cappelli', 'calze','giacche', 'cravatte']
+prodottiAggiornati = prodottiVendita.slice(1,prodottiVendita.length)
+console.log(prodottiAggiornati) // ['cappelli', 'calze','giacche', 'cravatte']
+```
+La funzione `.includes` serve per conoscere l'esistenza di un elemento all'interno di un array.
+Es. 
+```
+let prodottiVendita = ['scarpe', 'cappelli', 'calze','giacche', 'cravatte']
+let hoCalze = prodottiVendita.includes('calze')
+ 
 ```
