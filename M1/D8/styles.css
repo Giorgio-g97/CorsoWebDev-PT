@@ -1,0 +1,379 @@
+html {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0 8em;       /* IMPOSTO UN PADDING PER "CENTRARLO" */
+  background-color: white;
+}
+
+/* QUI RENDO I PULSANTI INTERATTIVI */
+
+/* ABILITO IL CURSORE RENDENDOLO "CLICCABILE" */
+main span,
+main h1,
+main ion-icon,
+header ion-icon,
+main button {
+  cursor: pointer;
+}
+
+/* AGGIUNGO ANIMAZIONI AL PASSAGGIO DEL MOUSE */
+.tag {
+  transition: background-color .3s;
+  background-color: #F2F2F2;
+}
+
+.tag:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+button {
+  transition: border .3s;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 0.5rem;
+}
+
+button:hover {
+  border: 1px solid black;
+}
+
+.search-bar ion-icon,
+.nf-right ion-icon {
+  transition: color .3s, font-size, .1s;
+  font-size: 1.7em;
+  color: gray;
+}
+
+.search-bar ion-icon:hover,
+.nf-right ion-icon:hover {
+  color: initial;
+  font-size: 1.8em;
+}
+
+.news-header span {
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 1.09rem;
+  margin-right: 1rem;
+  transition: color, border-bottom, .3s;
+}
+
+.news-header {
+  font-size: 1.2em;
+  width: 95%;
+  color: gray;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 1rem;
+  /* imposto lo stesso padding-bottom a span per far coincidere la linea */
+}
+
+.news-header span:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+header {
+  position: fixed; /* PER FISSARE IN ALTO L'HEADER */
+  z-index: 1;      /* IMPOSTATO A 1 PERCHE' LE ICONE SI SVRAPPONEVANO */
+  width: 100%;
+  background: white;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 7px -5px;
+}
+
+.header-logo {
+  width: 250px;
+  padding-left: 8em;
+}
+
+.search-bar {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 8em;
+}
+
+.search-user {
+  background-color: darkorange;
+  color: white;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  /* c'è un'alternativa che abbiamo già visto a lezione a line-height? */
+  line-height: 33px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+}
+
+.news {
+  margin-top: 100px;
+}
+
+/* QUI INIZIANO LE NEWS */
+
+.news-main {
+  width: 95%
+}
+
+.news-cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.news-title {
+  width: 80%;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.news-title h1 {
+  margin: 0.2em 0;
+  font-size: 1.6em;
+}
+
+.news-title span,
+p {
+  color: gray;
+  margin: 0;
+}
+
+.news-title p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.news-user {
+  display: flex;
+  align-items: center;
+}
+
+.news-user ion-icon {
+  font-size: 1.7em;
+  margin-right: 0.2em;
+}
+
+.news-user span {
+  color: black;
+  font-weight: bold;
+}
+
+.news-footer {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nf-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nf-left span {
+  margin-right: 0.3em;
+}
+
+.nf-left span:nth-child(5) {
+  color: black;
+  padding: 0.4em;
+  border-radius: 24px;
+}
+
+.nf-right {
+  display: flex;
+  width: 12%;
+  justify-content: space-between;
+}
+
+.news-img img {
+  width: 210px;
+  height: 130px;
+  object-fit: cover;
+}
+
+/* QUI INIZIA SIDEBAR */
+
+/* Per far funzionare sticky ho aggiunto un ulteriore contenitore aside impostando le dimensioni, mentre nel sottodiv news-side ho impostato lo sticky */
+
+aside {
+  border-left: 1px solid lightgray;
+  width: 25%;
+  padding-left: 3em;
+}
+
+aside p:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+.news-side {
+  position: sticky;
+  top: 100px;
+}
+
+.news-side>div {
+  margin-top: 2em;
+}
+
+/* PARTE SOCIAL */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.social div {
+  display: flex;
+  align-items: center;
+}
+
+.social p {
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+
+.social div img {
+  width: 44px;
+  margin: 0 0.2em;
+}
+
+.social button {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social button span {
+  width: 10%;
+}
+
+.social button span img {
+  width: 100%;
+  height: 100%;
+}
+
+.maybe {
+  text-decoration: underline;
+  color: gray;
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+
+/* PARTE TOPICS CONSIGLIATI */
+
+.recom-tags {
+  margin-top: 1em;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recom-tags span {
+  border-radius: 24px;
+  padding: 0.5em;
+  margin: 0.2em 0.2em;
+}
+
+/* PARTE FOLLOW */
+
+.follow>div {
+  margin-top: .5em;
+}
+
+.follow-users {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follow-u {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.follow-u ion-icon {
+  font-size: 2em;
+  margin-right: 0.3em;
+}
+
+.follow-bio p:first-child {
+  color: black;
+  font-weight: bold;
+}
+
+.follow-bio p {
+  margin: 0.3em 0;
+}
+
+/* PARTE SAVED */
+
+.rec-saved-box p span {
+  color: black;
+  font-weight: bold;
+}
+
+.rec-s-art {
+  margin: 1em 0;
+}
+
+.rec-s-art p {
+  margin: 0.3em 0;
+}
+
+.rec-a-title {
+  display: flex;
+  align-items: center;
+}
+
+.rec-a-title ion-icon {
+  margin-right: 0.5em;
+}
+
+.rec-a-footer {
+  display: flex;
+}
+
+.rec-a-footer span {
+  margin-top: 0.5em;
+  margin-right: 0.4em;
+  color: gray;
+}
+
+.rec-s-footer {
+  margin: 3em 0 4em 0;
+}
+
+.rec-s-footer span {
+  color: green;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+footer span {
+  color: gray;
+  margin: 0 1.1em .9em 0;
+}

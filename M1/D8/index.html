@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!-- import Ionicon -->
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Import Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D8</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img class="header-logo" src="https://miro.medium.com/v2/resize:fit:8978/1*s986xIGqhfsN8U--09_AdA.png"
+      alt="logo-medium">
+    <div class="search-bar">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-icon name="bookmarks-outline"></ion-icon>
+      <ion-icon name="notifications-outline"></ion-icon>
+      <button>Resume membership</button>
+      <div class="search-user"><span>T</span></div>
+    </div>
+  </header>
+
+  <!-- CONTENUTO PRINCIPALE -->
+  <main>
+    <div class="news">
+      <!-- NAV NOTIZIE PER CATEGORIA -->
+      <div class="news-header">
+        <span>FOLLOWING</span>
+        <span>RECOMENDED FOR YOU</span>
+      </div>
+      <!-- CONTENITORE DI NOTIZIE -->
+      <div class="news-main">
+        <!-- NOTIZIA 1 -->
+        <div class="news-cont">
+          <div class="news-title">
+            <div class="news-user">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>Kolby Sisk</span> in<span> Udacity Eng & Data</span></p>
+            </div>
+            <h1>React state management in 2022 - Return of the Redux</h1>
+            <p>At the beginning of the year if you told me I'd be publishing a
+              recommendation to use Redux ! would have laughed in your face. Yet herrrrrr</p>
+            <div class="news-footer">
+              <div class="nf-left">
+                <span class="date">Dec 3</span>
+                <span>·</span>
+                <span class="time-to-read">4 min</span>
+                <span>·</span>
+                <span class="tag">React</span>
+                <span>·</span>
+                <span class="categ">Popular on Medium</span>
+              </div>
+              <div class="nf-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="news-img">
+            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*RJO7hJQ9wLAJ0LQUQEWPLw.png"
+              alt="news-img">
+          </div>
+        </div>
+        <!-- NOTIZIA 2 ECC... -->
+        <div class="news-cont">
+          <div class="news-title">
+            <div class="news-user">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <span>Navoda Nilakshi</span>
+            </div>
+            <h1>How To Sanitize Your Express App Against MongoDB Injection & Cross-Site Scripting.</h1>
+            <p>Easiest way to sanitize your express app.</p>
+            <div class="news-footer">
+              <div class="nf-left">
+                <span class="date">Dec 19</span>
+                <span>·</span>
+                <span class="time-to-read">6 min</span>
+                <span>·</span>
+                <span class="tag">Web Development</span>
+                <span>·</span>
+                <span class="categ">Based on your reading history</span>
+              </div>
+              <div class="nf-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="news-img">
+            <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*9uEgULUbBBZ_e3Lp_83PTQ.png"
+              alt="news-img">
+          </div>
+        </div>
+        <div class="news-cont">
+          <div class="news-title">
+            <div class="news-user">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>Divyesh Bhalani
+                </span> in <span>Dhiwise</span></p>
+            </div>
+            <h1>React 18 new features and updates
+              Know about some cool features and updates of React 18.
+            </h1>
+            <p>Know about some cool features and updates of React 18.</p>
+            <div class="news-footer">
+              <div class="nf-left">
+                <span class="date">Nov 24</span>
+                <span>·</span>
+                <span class="time-to-read">4 min read</span>
+                <span>·</span>
+                <span class="tag">Reactjs</span>
+                <span>·</span>
+                <span class="categ">Popular on Medium</span>
+              </div>
+              <div class="nf-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="news-img">
+            <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*fBxLhsEv806GI576.jpg" alt="news-img">
+          </div>
+        </div>
+        <div class="news-cont">
+          <div class="news-title">
+            <div class="news-user">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>Vsevolod Ulyanovich</span> in <span>Fively Blog</span></p>
+            </div>
+            <h1>15 Best Web App Ideas for a Startup in 2021</h1>
+            <p>15 Startup Ideas and Technologies That Could Make You a Millionaire</p>
+            <div class="news-footer">
+              <div class="nf-left">
+                <span class="date">Oct 29</span>
+                <span>·</span>
+                <span class="time-to-read">6 min read</span>
+                <span>·</span>
+                <span class="tag">Web Development</span>
+                <span>·</span>
+                <span class="categ">Popular on Medium</span>
+              </div>
+              <div class="nf-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="news-img">
+            <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*vTZCFTXzDqTYIzgJFCTCqQ.jpeg"
+              alt="news-img">
+          </div>
+        </div>
+        <div class="news-cont">
+          <div class="news-title">
+            <div class="news-user">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>Kolby Sisk</span> in <span>Udacity Eng & Data</span></p>
+            </div>
+            <h1>Understanding re-rendering and memoization in
+              React</h1>
+            <p>The following are quick tips to increase performance in your React
+              application by understanding re-rendering and memoization. To betterrrrr</p>
+            <div class="news-footer">
+              <div class="nf-left">
+                <span class="date">Dec 6</span>
+                <span>·</span>
+                <span class="time-to-read">4 min read</span>
+                <span>·</span>
+                <span class="tag">React</span>
+                <span>·</span>
+                <span class="categ">Popular on Medium</span>
+              </div>
+              <div class="nf-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="news-img">
+            <img src="https://miro.medium.com/v2/resize:fit:4800/0*r0CU4Xbpp57p1fJM" alt="news-img">
+          </div>
+        </div>
+        <div class="news-cont">
+          <div class="news-title">
+            <div class="news-user">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>Arun Kashyap</span> in <span>Nerd For Tech</span></p>
+            </div>
+            <h1>Why Get Rid 0f Promises To Fetch Data In React?</h1>
+            <p>How You Can Make Your Code Well Structured!</p>
+            <div class="news-footer">
+              <div class="nf-left">
+                <span class="date">Jul 5</span>
+                <span>·</span>
+                <span class="time-to-read">5 min read</span>
+                <span>·</span>
+                <span class="tag">React</span>
+                <span>·</span>
+                <span class="categ">Selected for you</span>
+              </div>
+              <div class="nf-right">
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="news-img">
+            <img src="https://miro.medium.com/v2/resize:fit:4800/0*af6qZrOt3hXhUqYc" alt="news-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Da qui inizia la News side -->
+    <aside>
+      <div class="news-side">
+        <!-- PARTE SOCIAL -->
+        <div class="social">
+          <div>
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968854.png" alt="medium-icon">
+            <span>+</span>
+            <img src="https://img.freepik.com/free-icon/twitter_318-674515.jpg" alt="twitter-icon">
+          </div>
+          <p>Discover Medium writers you already follow on Twitter</p>
+          <button><span><img
+                src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png"
+                alt="twitter-icon"></span>Connect to Twitter</button>
+          <span class="maybe">Maybe later</span>
+        </div>
+        <!-- ARGOMENTI CONSIGLIATI -->
+        <div class="recom">
+          <p>Recomended Topics</p>
+          <div class="recom-tags">
+            <span class="tag">Technology</span>
+            <span class="tag">Money</span>
+            <span class="tag">Business</span>
+            <span class="tag">Productivity</span>
+            <span class="tag">Psycology</span>
+            <span class="tag">Mindfulness</span>
+            <span class="tag">Art</span>
+          </div>
+        </div>
+        <!-- SEZIONE FOLLOWS -->
+        <div class="follow">
+          <p>Who to follow</p>
+          <div class="follow-users">
+            <div class="follow-u">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <div class="follow-bio">
+                <p>Lessig</p>
+                <p>law professor, activist</p>
+              </div>
+            </div>
+            <div class="follow-button">
+              <button>Follow</button>
+            </div>
+          </div>
+          <div class="follow-users">
+            <div class="follow-u">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <div class="follow-bio">
+                <p>Lessig</p>
+                <p>law professor, activist</p>
+              </div>
+            </div>
+            <div class="follow-button">
+              <button>Follow</button>
+            </div>
+          </div>
+          <div class="follow-users">
+            <div class="follow-u">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <div class="follow-bio">
+                <p>Lessig</p>
+                <p>law professor, activist</p>
+              </div>
+            </div>
+            <div class="follow-button">
+              <button>Follow</button>
+            </div>
+          </div>
+        </div>
+        <!-- SEZIONE SALVATI DI RECENTE (?) -->
+        <div class="rec-saved-box">
+          <p>Recently saved</p>
+          <div class="rec-s-art">
+            <div class="rec-a-title">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>Eva Keiffnehiem</span> in <span>Age of Awareness</span></p>
+            </div>
+            <p><span>The Feynman Technique Will Make You Remember What You Read</span></p>
+            <div class="rec-a-footer">
+              <span>Oct2, 2020</span>
+              <span>·</span>
+              <span>6 min read</span>
+            </div>
+          </div>
+          <div class="rec-s-art">
+            <div class="rec-a-title">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p><span>chrissy teigen</span></p>
+            </div>
+            <p><span>Hi.</span></p>
+            <div class="rec-a-footer">
+              <span>Oct27, 2020</span>
+              <span>·</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+          <div class="rec-s-footer">
+            <span>See all (3)</span>
+          </div>
+        </div>
+        <!-- INIZIO FOOTER -->
+        <footer>
+          <span>Help</span>
+          <span>Status</span>
+          <span>Writers</span>
+          <span>Blog</span>
+          <span>Careers</span>
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>About</span>
+        </footer>
+      </div>
+    </aside>
+  </main>
+</body>
+
+</html>
