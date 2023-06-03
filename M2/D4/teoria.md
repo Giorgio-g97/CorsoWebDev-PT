@@ -90,5 +90,17 @@ Es.
 ```
 let prodottiVendita = ['scarpe', 'cappelli', 'calze','giacche', 'cravatte']
 let hoCalze = prodottiVendita.includes('calze')
- 
+console.log(hoCalze) // true
 ```
+La funzione `join` serve per unire (appunto join) tutti i valori dell'array in un'unica stringa di testo, separato dal valore che scegli (es. virgola "," o lo spazio " ").
+```
+let stringaUnica = newArr.join(,)
+console.log(stringaUnica) // output stringa con valori, separate da virgola ","
+```
+La funzione `splice` permette di **eliminare** i valori dall'array, indicando l'indice da selezionare, il numero di elementi da eliminare ed eventualmente il valore da sostituire. Potenzialmente può essere utilizzato semplicemente per aggiungere un valore all'interno di un indice specifico.
+```
+let colori = ['giallo', 'rosso', 'verde', 'blu']
+let eliminaVerde = color.splice(2,1, 'arancio'); // elimina, partendo dall'indice 2, un solo elemento, e lo sostituisce con il valore 'arancio'
+let aggiungiMagenta = color.splice(1,0,'magenta') // Aggiungo 'magenta' prima di 'rosso'
+```
+splice può essere 
