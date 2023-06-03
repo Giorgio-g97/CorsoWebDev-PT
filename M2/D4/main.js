@@ -42,26 +42,35 @@ let userArr = [];
 userArr.push(marco, paul, amy); // Add users with push
 console.log(userArr);
 // Step 2: stampo con loop for in per ogni utente la frase se è Ambassador o no
-for (let key in marco) {
-  console.log(`L'utente con nome ${marco["name"]} e cognome ${marco["lastName"]}`);
-  if (marco["isAmbassador"] === true) { console.log('è Ambassador') }
-  else { console.log('non è Ambassador') };
-  break;
+for(i=0;i<userArr.length;i++){ // Ciclo for
+  let utente = userArr[i]
+  let frase = `L'utente con nome ${utente.name} e cognome ${utente.lastName} `
+  if(!utente.isAmbassador){frase += 'NON '}
+  frase += "è Ambassador"
+  console.log(frase)
 }
 
-for (let key in paul) {
-  console.log(`L'utente con nome ${paul["name"]} e cognome ${paul["lastName"]}`);
-  if (paul["isAmbassador"] === true) { console.log('è Ambassador') }
-  else { console.log('non è Ambassador') };
-  break;
-}
+//  Ciclo for in
+// for (let key in marco) {
+//   console.log(`L'utente con nome ${marco["name"]} e cognome ${marco["lastName"]}`);
+//   if (marco["isAmbassador"] === true) { console.log('è Ambassador') }
+//   else { console.log('non è Ambassador') };
+//   break;
+// }
 
-for (let key in amy) {
-  console.log(`L'utente con nome ${amy["name"]} e cognome ${amy["lastName"]}`);
-  if (amy["isAmbassador"] === true) { console.log('è Ambassador') }
-  else { console.log('non è Ambassador') };
-  break;
-}
+// for (let key in paul) {
+//   console.log(`L'utente con nome ${paul["name"]} e cognome ${paul["lastName"]}`);
+//   if (paul["isAmbassador"] === true) { console.log('è Ambassador') }
+//   else { console.log('non è Ambassador') };
+//   break;
+// }
+
+// for (let key in amy) {
+//   console.log(`L'utente con nome ${amy["name"]} e cognome ${amy["lastName"]}`);
+//   if (amy["isAmbassador"] === true) { console.log('è Ambassador') }
+//   else { console.log('non è Ambassador') };
+//   break;
+// }
 console.log(`Utente che effettua l'acquisto: ${utenteCheEffettuaLAcquisto.name}`)
 // Step 3: fai somma dei prezzi
 let totalePrezzi = 0;
