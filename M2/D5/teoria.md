@@ -180,3 +180,19 @@ let str1 = 'ciao'
 let str2 = 'ciao2'
 console.log(str.concat(str2) // ciaociao2)
 ```
+* .repeat // ripete la stringa n volte
+```
+let str = 'ciao'
+console.log(str.repeat(3)) // ciaociaociao
+```
+* .replace // sostituisce **alla prima occorrenza**
+```
+let str = 'ciao a tutti mondo, come stai mondo?'
+console.log(str.replace('mondo', 'Java')) // ciao a tutti Java, come stai mondo?
+```
+* .replaceAll // sostituisce **a tutte le occorrenze**
+```
+let str = 'ciao a tutti mondo, come stai mondo?'
+console.log(str.replaceAll('mondo', 'Java')) // ciao a tutti Java, come stai Java?
+```
+Es. check password
