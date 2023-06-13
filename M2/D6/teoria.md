@@ -9,9 +9,7 @@ Come interagire:
 * **document.getElementById**: seleziona singolo oggetto (dato che nell'HTML dovrebbe esserci solo un elemento avente ID univoco)
 * **document.getElementByClassName**: seleziona **array** di oggetti aventi la stessa classe
 * **document.getElementByTagName**: **array** di oggetti avente stessa classe
-* **document.querySelector**: selezione **selettore specifico CSS**
-* **document.querySelectorAll**: seleziona tutti i **selettori CSS**
+* **document.querySelector**: selezione **selettore specifico di classe o id**
+* **document.querySelectorAll**: seleziona tutti i **selettori di classe o id** (per gli id non ha senso)
 * **node.children**: seleziona array di elementi figli
-## Esempi
-```
-```
+## Esempi in main.js
