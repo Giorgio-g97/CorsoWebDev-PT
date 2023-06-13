@@ -196,3 +196,25 @@ let str = 'ciao a tutti mondo, come stai mondo?'
 console.log(str.replaceAll('mondo', 'Java')) // ciao a tutti Java, come stai Java?
 ```
 Es. check password
+```
+function checkPassword(password){ // dal parametro 'password' passerà la psw che l'utente inserirà
+    let specialChar = "@#!?+_-" // inizializzo dizionario per controllo psw
+    let lowChar = 'abcdefghijklmnopqrstuvwxyz'
+    let upChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let digit = '0123456789'
+
+    let hasSpecial = false // pongo di base valore false
+    let hasLow = false
+    let hasUp = false
+    let hasDig = false
+
+    for(const char of password){ //ciclo psw stampando lettera per lettera
+        if(specialChar.includes(char)){hasSpecial=true}
+        if(lowChar.includes(char)){hasLow=true}
+        if(upChar.includes(char)){hasUp=true}
+        if(digit.includes(char)){hasDig=true}
+    }
+}
+
+checkPassword('')
+```

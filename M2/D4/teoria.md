@@ -15,7 +15,7 @@ Per accedere si usa:
 console.log(matrix[index riga][index colonna], matrix[secondo index riga][secondo index colonna]);
 ```
 # Ciclo per array
-Per scorrere gli elementi di un array (ciclare) senza stamparli manualmente, utilizziamo il ciclo **for off** che può sostituire il ciclo **for normale**.
+Per scorrere gli elementi di un array (ciclare) senza stamparli manualmente, utilizziamo il ciclo **for of** che può sostituire il ciclo **for normale**.
 ```
 for (const iterator of array){
 
