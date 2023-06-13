@@ -7,8 +7,8 @@ function crazySum(num1,num2){ // dichiaro funzione, mettendo due numeri come par
     }
     return sum              // salva il valore
   }
-  const risult = crazySum(2,2)  // crea costante risultato, chiamando la funzione con i parametri in input
-  console.log(risult)           // stampa il risultato
+  // const risult = crazySum(2,2)  // crea costante risultato, chiamando la funzione con i parametri in input
+  // console.log(risult)           // stampa il risultato
 // Es. 2
 function boundary(num){
     if((num >= 20 && num <= 100) || num === 400 ){ // combino and e or tra parentesi
@@ -31,3 +31,12 @@ function boundary(num){
   }
   
   upperFirst('ciao')
+  // Es. 5
+  function giveMeRandom(n){
+    let ranArr = []
+    for(i=0;i<=n;i++){
+     ranArr.push(Math.floor(Math.random() * 10) + 1)
+    }
+    return ranArr
+  }
+  console.log(giveMeRandom(5))
