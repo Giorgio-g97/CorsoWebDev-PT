@@ -214,7 +214,10 @@ function checkPassword(password){ // dal parametro 'password' passerà la psw ch
         if(upChar.includes(char)){hasUp=true}
         if(digit.includes(char)){hasDig=true}
     }
+
+    return (hasSpecial && hasLow && hasUp && hasDig && password.length > 8)
 }
 
-checkPassword('')
+let risult = checkPassword('')
+console.log('La password risulta accettabile: ', risult)
 ```
