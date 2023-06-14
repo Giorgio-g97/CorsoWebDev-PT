@@ -7,6 +7,19 @@
 </head>
 <body>
     <input id="myin" type="text" name="nome">
-    <button>Salva</button>
+     <button onclick="save()">Salva</button> <!--l'evento (event) lo metto solo se devo gestire qualcosa in particolare di un evento(es. quale tasto della tastiera premo, in quali coordinate si trova il mouse ecc..). Mi stampa con console.log i dettagli dell'evento, il tipo ecc.. In ogni caso questo è il primo metodo-->
+  <button id="myBtn">Salva secondo metodo</button>
+  <button id="myBtn3">Salva terzo metodo</button>
+  
+<!--   Utilizzo tag select -->
+  <select id="colori">
+     <option value="" selected disabled>Seleziona un colore</option>  <!--la parte value non serve all'utente, ma a noi per capire il valore selezionato -->
+    <option value="rosso">Rosso</option>
+    <option value="blu">Blu</option>
+    <option value="verde">Verde</option>
+    <option value="giallo">Giallo</option>
+  </select>
+<!--  input di tipo date  -->
+ <input type="date" id="data">
 </body>
 </html>
