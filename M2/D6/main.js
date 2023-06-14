@@ -43,7 +43,18 @@ const par = document.getElementsByClassName('paragrafo')
 // titolo.innerText = 'Provaaa'
 // par[0].innerText = 'prova11'
 
-// Es. bottone 
-const heading = getElementById('myHead')
-const headClass = getElementsByClassName('prova')
-heading[0].classList.add('red-color')
+// Es. bottone
+const heading = document.getElementById('myHead');
+const headClass = document.getElementsByClassName('prova');
+
+function addClass(){
+  headClass[0].classList.add('red-text'); // in alternativa si usa className per aggiungere più classi in un'unica riga
+  headClass[0].classList.add('bold-text');
+}
+
+function removeClass() {
+  headClass[0].classList.remove('red-text');
+  headClass[0].classList.remove('bold-text');
+}
+
+console.log(headClass);
