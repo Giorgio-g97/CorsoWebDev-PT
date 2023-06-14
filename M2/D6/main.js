@@ -44,17 +44,41 @@ const par = document.getElementsByClassName('paragrafo')
 // par[0].innerText = 'prova11'
 
 // Es. bottone
-const heading = document.getElementById('myHead');
-const headClass = document.getElementsByClassName('prova');
+// const heading = document.getElementById('myHead');
+// const headClass = document.getElementsByClassName('prova');
 
-function addClass(){
-  headClass[0].classList.add('red-text'); // in alternativa si usa className per aggiungere più classi in un'unica riga
-  headClass[0].classList.add('bold-text');
-}
+// function addClass(){
+//   headClass[0].classList.add('red-text'); // in alternativa si usa className per aggiungere più classi in un'unica riga
+//   headClass[0].classList.add('bold-text');
+// }
 
-function removeClass() {
-  headClass[0].classList.remove('red-text');
-  headClass[0].classList.remove('bold-text');
-}
+// function removeClass() {
+//   headClass[0].classList.remove('red-text');
+//   headClass[0].classList.remove('bold-text');
+// }
 
-console.log(headClass);
+// console.log(headClass);
+
+const newDiv = document.createElement('div') // creo e salvo elemento div in variabile
+console.log(newDiv)
+
+newDiv.id = 'newDiv' // Assegno id 'newDiv'
+newDiv.classList.add('red-box'); // aggiungo classe 'red-box' creata in CSS
+newDiv.innerText = 'Questo è il contenuto del nuovo div'; // Aggiungo testo al nuovo div
+
+// const parentEl = document.querySelector('#create-node') // seleziono il parent da dove poi collocherò il nuovo div
+// parentEl.appendChild(newDiv); // colloco il nuovo div (metodo appendChild)
+
+// const parentEl2 = document.querySelector('#reference') // seleziono il punto specifico dove posizionarmi
+// parentEl.insertBefore(newDiv, parentEl2) // colloco il div nel punto selezionato in precedenza (metodo insertBefore)
+
+// Per aggiungere il div all'inizio del body si parte dal body come parent e si fa un insertBefore prima del primo div #create-node
+
+// const parentB = document.getElementsByTagName('body')[0] // seleziono il parent body, essendo array di tag (tagname) devo selezionare anche l'indice, quindi il primo [0]
+// const nodeDiv = document.querySelector('#create-node') // seleziono il div dove posizionarlo prima di questo
+// parentB.insertBefore(newDiv, nodeDiv) // uso metodo insertBefore
+
+// Rimuovere element dall'HTML (es. voglio rimuovere primo p nel tag #create-node)
+
+const remEl = document.getElementById('prova')
+remEl.remove()

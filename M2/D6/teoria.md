@@ -14,16 +14,14 @@ Come interagire:
 * **node.children**: seleziona array di elementi figli
 ## Esempi in main.js
 ## Creare elementi (o nodi) tramite JS (es. un div)
-Si crea salvando in una variabile il `document.createElement('elemento')`
-## Collocarli nell'HTML
-Si fa questo secondo passaggio perché al momento della creazione, viene solo salvato in una variabile JS, ma non nell'HTML.
+1. Si crea salvando in una variabile JS il `document.createElement('elemento')`
+2. Si selezione un parent da dove collocare il nuovo elemento (es. un div o il body)
+3. Si colloca nell'HTML
+Si fa questo ulteriore passaggio perché al momento della creazione, viene solo salvato in una variabile JS, ma non nell'HTML.
 Ci sono sostanzialmente due modi:
-* con **appendChild(newEl)**:
-```
-let body = document.querySelector('body')
-body.appendChild('newDiv')
-```
+* con **appendChild(newEl)**
 In questo modo verrà creato come **ultimo figlio** del tag body
 
-* **containerNode.insertBefore(newNode, subsequentNode)**
+* **parentElement.insertBefore(newEl, subsequentEl)**
 Colloca il nuovo nodo prima del tag indicato
+## Rimuovere un elemento dall'HTML

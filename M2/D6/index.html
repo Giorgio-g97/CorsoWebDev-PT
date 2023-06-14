@@ -11,8 +11,14 @@
       color: red;
     }
 
-    bold-text {
+    .bold-text {
       font-weight: bold;
+    }
+
+    .red-box {
+      padding: 10px;
+      background-color: red;
+      color: white;
     }
   </style>
 </head>
@@ -63,9 +69,16 @@
 <p class="paragrafo">paragrafo 3</p>
 <script src="main.js"></script> -->
 
-  <p id="myHead" class="prova">Questo è un titolo</p>
+  <!-- <p id="myHead" class="prova">Questo è un titolo</p>
   <button id="addBtn" onclick="addClass()">Aggiungi</button>
-  <button id="removeBtn" onclick="removeClass()">Rimuovi</button>
+  <button id="removeBtn" onclick="removeClass()">Rimuovi</button> -->
+
+  <div id="create-node">
+    <p id="prova">Primo paragrafo</p>
+    <p>Primo paragrafo</p>
+    <div id="reference"></div>
+  </div>
+
 </body>
 
 </html>
