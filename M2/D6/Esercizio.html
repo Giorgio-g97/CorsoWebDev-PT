@@ -5,11 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G Shop</title>
+    <style>
+        #title {
+            text-align: center;
+        }
+
+        .prod-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #comment {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .bg-body {
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>G Shop</h1>
+    <h1 id="title">G Shop</h1>
 
     <div class="prod-container">
         <div class="product">
@@ -44,8 +66,10 @@
         </div>
     </div>
 
-    <h2>Lascia un commento per il prodotto</h2>
-    <textarea name="prod" cols="30" rows="10" placeholder="Scrivi qui il tuo commento"></textarea>
+    <div id="comment">
+        <h2>Lascia un commento per il prodotto</h2>
+        <textarea name="prod" cols="30" rows="10" placeholder="Scrivi qui il tuo commento"></textarea>
+    </div>
 
     <footer>
         <p>G Shop</p>
