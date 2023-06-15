@@ -36,23 +36,80 @@ btn3.addEventListener('click', save) // inseriamo il nome dell'evento es. click 
 
 Nell'HTML
 ```
-<select>
-     <option value=""></option>
-    <option value="">Rosso</option>
-    <option value="">Blu</option>
-    <option value="">Verde</option>
-    <option value="">Giallo</option>
+<!--   Utilizzo tag select -->
+  <select id="colori">
+     <option value="" selected disabled>Seleziona un colore</option>  <!--la parte value non serve all'utente, ma a noi per capire il valore selezionato -->
+    <option id="red" value="rosso">Rosso</option>
+    <option id="blue" value="blu">Blu</option>
+    <option id="green" value="verde">Verde</option>
+    <option id="yellow" value="giallo">Giallo</option>
   </select>
 ```
 La parte `value` non serve all'utente, ma a noi per capire il valore selezionato.
 Nel JS
 ```
+// Uso tag select
 const selEl = document.getElementById('colori') // seleziono il selector
-selEl.addEventListener('change', getSel)
+selEl.addEventListener('change', getSel) // change è il tipo di evento quando sceglo un option del selector
+
 function getSel(){
   console.log('change')
   const selVal = selEl.value
   console.log('Evento selezionato: ', selVal)
+  
+  if (selEl.value === "rosso"){  // setto il colore alla scelta del rosso
+    const selC = document.getElementById('red')
+    selC.classList.add('bg-red')
+  }
 }
 ```
 `change` è il tipo di evento quando scelgo un option del selector
+
+## Utilizzo tag date/datetime-local
+
+Nell'HTML
+```
+<!--  input di tipo date  -->
+  <input type="date" id="data">
+  <input type="datetime-local" id="data">
+```
+Anche nel campo `date` c'è l'evento di tipo `change`
+```
+// input date
+const date = document.getElementById('data')
+date.onchange = getDate
+function getDate(){
+  console.log(date.value) // stampo valore della data presa da getElement 'data'
+}
+```
+
+## Input color
+Qui l'eventListener è di tipo `oninput`
+```
+<!--  input color  -->
+  <input type="color" oninput = "c()" id="color">
+```
+Mentre nel JS è come sempre
+```
+// input color
+function getCol(){
+  const c = document.getElementById('color')
+  console.log(c.value)
+}
+```
+
+## Eventi window
+
+Ci sono eventi collegati a tutta la finestra del browser e non solo ad uno specifico oggetto, es. lo scroll. Per questo si usa l'oggetto `window`.
+<br>
+Nel JS
+```
+// scroll window
+window.addEventListener('scroll', function(){
+  const scrollPosition = window.pageYOffset // la posizione la prendiamo dall'oggetto window, in questo caso window.pageYOffset
+  console.log('la tua posizione: ', scrollPosition)
+})
+```
+
+## Window onload
+Ci da la possibilità di eseguire JS dopo che la pagina è stata caricata, a prescindere da dove si trovi il tag `<script>`. E' un po' come **"forzare"** lo script a fine body. 

@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <style>
+    .bg-red {
+      background-color: red;
+    }
+  </style>
 </head>
 <body>
     <input id="myin" type="text" name="nome">
@@ -14,12 +19,17 @@
 <!--   Utilizzo tag select -->
   <select id="colori">
      <option value="" selected disabled>Seleziona un colore</option>  <!--la parte value non serve all'utente, ma a noi per capire il valore selezionato -->
-    <option value="rosso">Rosso</option>
-    <option value="blu">Blu</option>
-    <option value="verde">Verde</option>
-    <option value="giallo">Giallo</option>
+    <option id="red" value="rosso">Rosso</option>
+    <option id="blue" value="blu">Blu</option>
+    <option id="green" value="verde">Verde</option>
+    <option id="yellow" value="giallo">Giallo</option>
   </select>
 <!--  input di tipo date  -->
- <input type="date" id="data">
+  <input type="date" id="data">
+  <input type="datetime-local" id="data">
+<!--  input color  -->
+  <input type="color" oninput = "getCol()" id="color">
+<!--  Window scroll  -->
+  <div style="height: 2000px">Ciao</div>
 </body>
 </html>

@@ -15,15 +15,33 @@ btn3.addEventListener('click', save) // inseriamo il nome dell'evento es. click 
 // Uso tag select
 const selEl = document.getElementById('colori') // seleziono il selector
 selEl.addEventListener('change', getSel) // change è il tipo di evento quando sceglo un option del selector
+
 function getSel(){
   console.log('change')
   const selVal = selEl.value
   console.log('Evento selezionato: ', selVal)
+  
+  if (selEl.value === "rosso"){                 // setto il colore alla scelta del rosso
+    const selC = document.getElementById('red')
+    selC.classList.add('bg-red')
+  }
 }
 
 // input date
 const date = document.getElementById('data')
 date.onchange = getDate // anche qui l'evento è di tipo change
 function getDate(){
-  
+  console.log(date.value) // stampo valore della data presa da getElement 'data'
 }
+
+// input color
+function getCol(){
+  const c = document.getElementById('color')
+  console.log(c.value)
+}
+
+// scroll window
+window.addEventListener('scroll', function(){
+  const scrollPosition = window.pageYOffset // la posizione la prendiamo dall'oggetto window, in questo caso window.pageYOffset
+  console.log('la tua posizione: ', scrollPosition)
+})
