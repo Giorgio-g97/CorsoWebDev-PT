@@ -45,3 +45,8 @@ window.addEventListener('scroll', function(){
   const scrollPosition = window.pageYOffset // la posizione la prendiamo dall'oggetto window, in questo caso window.pageYOffset
   console.log('la tua posizione: ', scrollPosition)
 })
+
+window.onload = function(){
+  const out = document.getElementById('ouOfScript')
+  console.log('here', out)
+}

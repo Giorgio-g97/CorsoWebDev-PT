@@ -30,6 +30,10 @@
 <!--  input color  -->
   <input type="color" oninput = "getCol()" id="color">
 <!--  Window scroll  -->
-  <div style="height: 2000px">Ciao</div>
+  <div style="height: 200px">Ciao</div>
+
+  <script scr="main.js"></script>   <!-- Anche se viene caricato prima lo script del div, viene comunque caricato in JS con window.onload-->
+
+  <div id="outOfScript">Ciaoo</div>
 </body>
 </html>

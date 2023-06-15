@@ -113,3 +113,25 @@ window.addEventListener('scroll', function(){
 
 ## Window onload
 Ci da la possibilità di eseguire JS dopo che la pagina è stata caricata, a prescindere da dove si trovi il tag `<script>`. E' un po' come **"forzare"** lo script a fine body. 
+<br>
+Nell'HTML
+```
+<!--  input color  -->
+  <input type="color" oninput = "getCol()" id="color">
+<!--  Window scroll  -->
+  <div style="height: 200px">Ciao</div>
+  <script scr="main.js"></script>
+  <div id="outOfScript">Ciaoo</div>
+</body>
+</html>
+
+```
+
+<br>
+Nel JS
+```
+window.onload = function(){
+  const out = document.getElementById('ouOfScript')
+  console.log('here', out)
+}
+```
