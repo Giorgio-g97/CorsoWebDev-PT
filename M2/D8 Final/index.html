@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <input type="text" id="title" placeholder="Inserisci il titolo">
+  <input type="text" id="location" placeholder="Inserisci localitÃ ">
+  <button id="btn">Cerca</button>
+
+  <ul></ul>
+
+  <script>
+    const jobs = [
+      { title: "Marketing Intern", location: "US, NY, New York" },
+      {
+        title: "Customer Service - Cloud Video Production",
+        location: "NZ, Auckland",
+      },
+      {
+        title: "Commissioning Machinery Assistant (CMA)",
+        location: "US, IA, Wever",
+      },
+      {
+        title: "Account Executive - Washington DC",
+        location: "US, DC, Washington",
+      }
+    ]
+
+    function searchJobs(tit, loc) {
+      const r = {
+        result: [],
+        count: 0
+      }
+      for (i = 0; i < jobs.length; i++) {
+        const lavori = jobs[i]
+        // console.log(lavori)
+        let titJob = tit.toLowerCase()
+        let locJob = loc.toLowerCase()
+        let currTit = lavori.title.toLowerCase()
+        let currLoc = lavori.location.toLowerCase()
+        if (currTit.includes(titJob) && currLoc.includes(locJob)) {
+          // console.log('Hai cercato: ', titJob, locJob)
+          // console.log('combacia')
+          r.result.push(lavori)
+          r.count++
+          // console.log(r.result)
+        } else {
+          // console.log('Hai cercato: ', titJob, locJob)
+          // console.log('non ho trovato nulla')
+        }
+      }
+      // console.log(r.result)
+      return r
+    }
+
+
+    const inTit = document.getElementById('title')
+    const inLoc = document.getElementById('location')
+    const btn = document.getElementById('btn')
+    const ul = document.querySelector('ul')
+
+    btn.addEventListener('click', () => {
+      const res = searchJobs(inTit.value, inLoc.value)
+      console.log(res)
+      for (let i = 0; i < res.result.length; i++) {
+        const lavoro = res.result[i];
+        ul.innerHTML += `<li> ${lavoro.title} & ${lavoro.location} </li>`
+      }
+    })
+
+
+  // searchJobs('mark', 'us')
+
+  </script>
+</body>
+
+</html>
