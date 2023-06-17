@@ -5,15 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <input type="text" id="title" placeholder="Inserisci il titolo">
-  <input type="text" id="location" placeholder="Inserisci localitÃ ">
-  <button id="btn">Cerca</button>
+  <nav>
+    <input type="text" id="title" placeholder="Inserisci il titolo">
+    <input type="text" id="location" placeholder="Inserisci località ">
+    <button id="btn">Cerca</button>
+  </nav>
 
-  <ul></ul>
+  <main>
+    <ul></ul>
+  </main>
 
   <script>
     const jobs = [
@@ -141,7 +146,7 @@
       console.log(res)
       for (let i = 0; i < res.result.length; i++) {
         const lavoro = res.result[i];
-        ul.innerHTML += `<li> ${lavoro.title} & ${lavoro.location} </li>`
+        ul.innerHTML += `<li> ${lavoro.title} In ${lavoro.location} </li>`
       }
     })
 
