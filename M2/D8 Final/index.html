@@ -158,46 +158,43 @@
       },
     ]
 
-    function searchJobs(tit, loc) {
+    function searchJob(tit, loc) {
       const r = {
         result: [],
         count: 0
       }
-      for (i = 0; i < jobs.length; i++) {
-        const lavori = jobs[i]
-        // console.log(lavori)
-        let titJob = tit.toLowerCase()
-        let locJob = loc.toLowerCase()
-        let currTit = lavori.title.toLowerCase()
-        let currLoc = lavori.location.toLowerCase()
-        if (currTit.includes(titJob) && currLoc.includes(locJob)) {
-          // console.log('Hai cercato: ', titJob, locJob)
-          // console.log('combacia')
-          r.result.push(lavori)
-          r.count++
-          // console.log(r.result)
-        } else {
-          // console.log('Hai cercato: ', titJob, locJob)
-          // console.log('non ho trovato nulla')
+
+      for (let lavori of jobs) {
+        // console.log(lavori.title)
+        let titMin = tit.toLowerCase();
+        let locMin = loc.toLowerCase();
+        let currTit = lavori.title.toLocaleLowerCase();
+        let currLoc = lavori.location.toLowerCase();
+        if (currTit.includes(titMin) && currLoc.includes(locMin)) {
+          // console.log(currTit, currLoc)
+          r.result.push(lavori);
+          // console.log(lavori);
         }
       }
-      // console.log(r.result)
-      return r
+      return r;
     }
 
-    const inTit = document.getElementById('title')
-    const inLoc = document.getElementById('location')
-    const btn = document.getElementById('btn')
-    const ul = document.querySelector('ul')
+    function onClickSearch(){
+      let title = document.getElementById('title');
+      let location = document.getElementById('location');
+      let btn = document.getElementById('btn');
+      let ul = document.querySelector('ul');
+      btn.addEventListener('click', function () {
+        const ris = searchJob(title.value, location.value);
+        for(const lavori of ris.result){
+          console.log(lavori.title, lavori.location)
+          ul.innerHTML += `<li> ${lavori.title} In ${lavori.location} </li>`
+        }
+        
+      });
+    }
 
-    btn.addEventListener('click', () => {
-      const res = searchJobs(inTit.value, inLoc.value)
-      for (let i = 0; i < res.result.length; i++) {
-        console.log(res)
-        const lavoro = res.result[i];
-        ul.innerHTML += `<li> ${lavoro.title} In ${lavoro.location} </li>`
-      }
-    })
+    onClickSearch()
   </script>
 </body>
 
