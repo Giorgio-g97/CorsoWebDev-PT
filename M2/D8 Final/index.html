@@ -185,6 +185,7 @@
       let btn = document.getElementById('btn');
       let ul = document.querySelector('ul');
       btn.addEventListener('click', function () {
+        ul.innerHTML = ""
         const ris = searchJob(title.value, location.value);
         for(const lavori of ris.result){
           console.log(lavori.title, lavori.location)
