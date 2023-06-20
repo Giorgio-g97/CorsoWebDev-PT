@@ -396,10 +396,24 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 
         // Extra 1
         function removeTwitter() {
-            let linkTwitter = document.getElementById('aside div:last-of-type ol li:nth-child(2)')
-            console.log(linkTwitter)
+            let linkTwitter = document.querySelector('aside div:last-of-type ol li:nth-child(2)');
+            linkTwitter.remove();
+            console.log(linkTwitter);
         }
-        removeTwitter();
+        // window.onload = removeTwitter();
+
+        // Extra 2
+        let postArr = []
+        for(const i of postArr){
+            let post = document.querySelectorAll('col-md-6');
+            postArr.push(post)
+            console.log(post[i]);
+            // let link = document.querySelectorAll('stretched-link');
+            // link.addEventListener('click', function(){
+            //     let div = document.
+            // })
+        }
+
     </script>
 </body>
 
