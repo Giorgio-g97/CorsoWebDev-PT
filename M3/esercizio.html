@@ -404,15 +404,20 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 
         // Extra 2
         let postArr = []
-        for(const i of postArr){
-            let post = document.querySelectorAll('col-md-6');
-            postArr.push(post)
-            console.log(post[i]);
-            // let link = document.querySelectorAll('stretched-link');
-            // link.addEventListener('click', function(){
-            //     let div = document.
-            // })
+        function removeContinue(){
+            for(let i of postArr){
+                let post = document.querySelectorAll('.row.mb-2 .col-md-6');
+                console.log(i);
+                // const r = postArr.push(post[i]);
+                // console.log(r);
+                // let link = document.querySelectorAll('stretched-link');
+                // link.addEventListener('click', function(){
+                    //     let div = document.
+                    // })
+                }
         }
+
+        removeContinue();
 
     </script>
 </body>
