@@ -407,13 +407,16 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
             for (let i of document.getElementsByClassName('stretched-link')) {
                 i.addEventListener('click', function () {
                     console.log(i);
-                    const child = document.getElementsByClassName('stretched-link');
-                    console.log(child)
+                    const r = i.parentNode.parentNode;
+                    r.remove();
                 })
             }
         }
+        
+        window.onload = removeContinue();
 
-        removeContinue();
+        //  Extra 3
+        
 
     </script>
 </body>
