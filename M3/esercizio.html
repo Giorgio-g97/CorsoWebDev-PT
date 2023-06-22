@@ -108,7 +108,7 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
         <div class="jumbotron p-4 p-md-5 rounded ">
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">
-                    Titolo lungo del post di aperturaAAAAA
+                    Titolo lungo del post di apertura
                 </h1>
                 <p class="lead my-3">
                     Blocco di testo che forma le prime righe dell'attacco del post.
@@ -412,11 +412,22 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
                 })
             }
         }
-        
+
         window.onload = removeContinue();
 
         //  Extra 3
+        function alertUser() {
+            for (let a of document.querySelectorAll('p.blog-post-meta a')) {
+                a.addEventListener('mouseover', function (e) {
+                    // console.log(e);
+                    const r = a.textContent;
+                    console.log(r);
+                    alert(`L'autore che hai passato col mouse è ${r}`)
+                })
+            }
+        }
 
+        window.onload = alertUser();
 
     </script>
 </body>
