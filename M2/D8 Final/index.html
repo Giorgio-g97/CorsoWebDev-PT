@@ -191,16 +191,30 @@
       let title = document.getElementById('title');
       let location = document.getElementById('location');
       let btn = document.getElementById('btn');
-      btn.addEventListener('click', function() {
-      ul.innerHTML = "";
-      ul.style.opacity = '0';
-      const ris = searchJob(title.value, location.value);
-      for (const lavori of ris.result) {
-        console.log(lavori.title, lavori.location)
-        ul.innerHTML += `<li> ${lavori.title} In ${lavori.location} </li>`
-        ul.style.opacity = '100';
-      }
-    });
+      btn.addEventListener('click', function () {
+        ul.innerHTML = "";
+        ul.style.opacity = '0';
+        const ris = searchJob(title.value, location.value);
+        for (const lavori of ris.result) {
+          console.log(lavori.title, lavori.location)
+          ul.innerHTML += `<li> ${lavori.title} In ${lavori.location} </li>`
+          ul.style.opacity = '100';
+        }
+      });
+
+      title.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+      location.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+
     }
 
     onClickSearch()
