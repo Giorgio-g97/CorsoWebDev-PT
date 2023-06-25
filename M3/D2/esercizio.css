@@ -1,29 +1,43 @@
 * {
     margin: 0;
     padding: 0;
+    color: #8B5A2D;
+}
+
+body {
+    position: relative;
+    background-color: #fffffb;
 }
 
 nav {
-    width: 100vh;
+    width: 60vw;
+    position: fixed;
+    top: 30px;
     left: 50%;
-    /* right: 50%;
-    transform: translate(-50%, -50%); */
+    bottom: 100px;
+    transform: translate(-50%, -50%);
     height: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
     border-radius: 24px;    
-    background-color: #FCF7E3;
+    background-color: #fff5ce;
 }
 
 button {
     background-color: #F3DF86;
     border-radius: 24px;
     border: none;
+    padding: 6px;
+}
+
+#shop {
+    background-color: aqua;
 }
 
 #shop a {
+    text-decoration: none;
     width: 51px;
     height: 37px;
     display: flex;
@@ -33,4 +47,42 @@ button {
 #shop a img {
     width: 80%;
     height: 80%;
+}
+
+main {
+    margin-top: 70px;
+}
+
+#card {
+    background-color: #fff5ce;
+    border-radius: 24px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 60%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.desc {
+    height: 40%;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prod-desc p:first-child {
+    font-weight: bold;
+}
+
+.btn-card {
+    text-align: center;
 }
