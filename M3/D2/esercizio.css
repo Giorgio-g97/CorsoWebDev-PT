@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: #8B5A2D;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,6 +53,30 @@ button {
 main {
     margin-top: 70px;
 }
+
+article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+article img {
+    padding: 20px;
+    width: 40%;
+    height: auto;;
+    flex: 1 0 200px;
+    order: 2;
+}
+
+.desc-container{
+  padding: 10px;
+  flex: 3 0 500px;
+  order: 1;
+}
+
+
 
 #card {
     background-color: #fff5ce;
