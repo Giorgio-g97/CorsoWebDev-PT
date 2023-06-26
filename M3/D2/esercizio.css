@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    color: #8B5A2D;
+    color: #68320D;
+    font-family: sans-serif;
 }
 
 body {
@@ -30,27 +31,70 @@ button {
     border-radius: 24px;
     border: none;
     padding: 6px;
+    cursor: pointer;
+    transition: background-color .1s, transform .1s;
 }
 
 #shop {
-    background-color: aqua;
+    width: 120px;
 }
 
 #shop a {
+    background-color: #F3DF86;
     text-decoration: none;
-    width: 51px;
+    width: 100%;
+    border-radius: 24px;
     height: 37px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    font-weight: bold;
+    transition: background-color .1s, transform .1s;
+}
+
+button:hover {
+    background-color: #F2CC4F;
+    transform: scale(1.1);
+}
+
+#shop a:hover {
+    background-color: #F2CC4F;
+    transform: scale(1.1);
 }
 
 #shop a img {
-    width: 80%;
-    height: 80%;
+    width: 25%;
+    height: 60%;
 }
 
 main {
-    margin-top: 70px;
+    margin-top: 90px;
+}
+
+article{
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article img {
+    width: 50%;
+    height: auto;
+    margin-right: 40px;
+}
+
+.article-desc {
+    width: 50%;
+}
+
+.article-desc h2{
+    margin-bottom: 20px;
+}
+
+.card-coll {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
 }
 
 #card {
@@ -59,6 +103,11 @@ main {
     width: 200px;
     height: 300px;
     overflow: hidden;
+    transition: transform .3s;
+}
+
+#card:hover {
+    transform: scale(1.1);
 }
 
 .card-img {
