@@ -3,6 +3,7 @@
     padding: 0;
     color: #68320D;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -74,17 +75,24 @@ main {
 article{
     margin: 0 30px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
 article img {
+    border-radius: 80px;
     width: 50%;
     height: auto;
-    margin-right: 40px;
+    flex: 1 0 300px;
+    order: 2;
+    padding: 20px;
 }
 
 .article-desc {
+    flex: 1 0 300px;
     width: 50%;
+    order: 1;
 }
 
 .article-desc h2{
