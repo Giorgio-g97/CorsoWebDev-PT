@@ -1,5 +1,8 @@
 .custom-album {
-    height: 250px;
     background: rgb(81, 106, 110);
     background: linear-gradient(0deg, rgba(81, 106, 110, 1) 12%, rgba(135, 176, 183, 1) 100%);
+}
+
+.custom-fs {
+    font-size: 100px;
 }
