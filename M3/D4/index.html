@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <i class="fa-solid fa-plane-departure d-inline-block align-text-top"></i>
@@ -31,19 +31,20 @@
                             Servizi
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Last Minute</a></li>
-                            <li><a class="dropdown-item" href="#">Viaggi di nozze</a></li>
+                            <li><a class="dropdown-item" href="#off-set">Offerte della settimana!</a></li>
+                            <li><a class="dropdown-item" href="#summer">Welcome SUmmer</a></li>
+                            <li><a class="dropdown-item" href="#last-min">Last Minute</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Prezzi</a>
+                        <a class="nav-link" href="#rev">Recensioni</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="jumbotron p-3 mt-3 mb-5 rounded-4 mx-5">
+    <div class="jumbotron p-3 mb-5 rounded-4 mx-5" style="margin-top: 80px">
         <h1 class="display-4">Ciao!</h1>
         <p class="lead">Hai sempre desiderato viaggiare, ma non sai da dove partire?</p>
         <hr class="my-4">
@@ -54,7 +55,7 @@
     </div>
 
     <!-- Offerte della settimana -->
-    <div class="container my-3">
+    <div id="off-set" class="container my-3">
         <div class="row">
             <h1>Offerta della settimana!</h1>
             <hr>
@@ -204,7 +205,7 @@
         </div>
     </div>
     <!-- Welcome Summer -->
-    <div class="container-fluid my-3">
+    <div id="summer" class="container-fluid my-3">
         <div class="row">
             <h1 class="text-center">Welcome Summer!</h1>
             <hr>
@@ -355,7 +356,7 @@
     </div>
 
     <!-- Offerta del giorno -->
-    <div class="container d-sm-none d-md-block d-lg-block">
+    <div id="daily" class="container d-sm-none d-md-block d-lg-block">
         <div class="row">
             <div class="col-12">
                 <h2>Offerta del giorno!</h2>
@@ -378,7 +379,8 @@
         </div>
     </div>
 
-    <div class="container">
+    <!-- Last minute -->
+    <div id="last-min" class="container">
         <div class="row">
             <h1>Last minute</h1>
             <hr>
@@ -482,7 +484,7 @@
     </div>
 
     <!-- Recensioni -->
-    <div class="container my-5">
+    <div id="rev" class="container my-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-10 col-xl-8 text-center">
                 <h3 class="mb-4">Recensioni</h3>
@@ -497,8 +499,8 @@
         <div class="row text-center">
             <div class="col-md-4 mb-5 mb-md-0">
                 <div class="d-flex justify-content-center mb-4">
-                    <img src="https://i.pravatar.cc/150"
-                        class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    <img src="https://i.pravatar.cc/150" class="rounded-circle shadow-1-strong" width="150"
+                        height="150" />
                 </div>
                 <h5 class="mb-3">Maria Smantha</h5>
                 <h6 class="text-primary mb-3">Web Developer</h6>
@@ -527,8 +529,8 @@
             </div>
             <div class="col-md-4 mb-5 mb-md-0">
                 <div class="d-flex justify-content-center mb-4">
-                    <img src="https://i.pravatar.cc/151"
-                        class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    <img src="https://i.pravatar.cc/151" class="rounded-circle shadow-1-strong" width="150"
+                        height="150" />
                 </div>
                 <h5 class="mb-3">Lisa Cudrow</h5>
                 <h6 class="text-primary mb-3">Graphic Designer</h6>
@@ -556,8 +558,8 @@
             </div>
             <div class="col-md-4 mb-0">
                 <div class="d-flex justify-content-center mb-4">
-                    <img src="https://i.pravatar.cc/152"
-                        class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    <img src="https://i.pravatar.cc/152" class="rounded-circle shadow-1-strong" width="150"
+                        height="150" />
                 </div>
                 <h5 class="mb-3">John Smith</h5>
                 <h6 class="text-primary mb-3">Marketing Specialist</h6>
@@ -585,6 +587,85 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-dark" style="background-color: #CAF0F8">
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-dark">Chi siamo</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-dark">Servizi</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-dark">premi</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-dark">Aiuto</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-dark">Contatti</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                            distinctio earum repellat quaerat voluptatibus placeat nam,
+                            commodi optio pariatur est quia magnam eum harum corrupti
+                            dicta, aliquam sequi voluptate quas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">Giorgio</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End of .container -->
 </body>
 
 </html>
