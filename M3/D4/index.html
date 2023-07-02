@@ -24,25 +24,28 @@
                 <i class="fa-solid fa-plane-departure d-inline-block align-text-top"></i>
                 Home
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servizi
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#off-set">Offerte della settimana</a></li>
-                  <li><a class="dropdown-item" href="#summer">Welcome Summer</a></li>
-                  <li><a class="dropdown-item" href="#last-min">Last minute</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Servizi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#off-set">Offerte della settimana</a></li>
+                            <li><a class="dropdown-item" href="#summer">Welcome Summer</a></li>
+                            <li><a class="dropdown-item" href="#last-min">Last minute</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <div class="jumbotron p-3 mb-5 rounded-4 mx-5" style="margin-top: 80px">
         <h1 class="display-4">Ciao!</h1>
@@ -55,10 +58,18 @@
     </div>
 
     <!-- Offerte della settimana -->
-    <div id="off-set" class="container my-3">
+    <div class="d-flex justify-content-around">
+        <h1 class="col-8">Offerta della settimana!</h1>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#off-set" role="button" aria-expanded="false"
+                aria-controls="off-set">
+                Mostra/Nascondi
+            </a>
+        </p>
+        <hr>
+    </div>
+    <div id="off-set" class="container my-3 collapse.show">
         <div class="row">
-            <h1>Offerta della settimana!</h1>
-            <hr>
             <div class="col-6 col-md-4 col-lg-3 col-xl-3 my-3 d-flex justify-content-center">
                 <div class="card" style="width: 15rem;">
                     <img src="https://picsum.photos/1080" class="card-img-top" alt="lorem-picsum">
@@ -204,11 +215,22 @@
             </div>
         </div>
     </div>
+
     <!-- Welcome Summer -->
-    <div id="summer" class="container-fluid my-3">
+
+    <div class="d-flex justify-content-around">
+        <h1 class="col-8">Welcome Summer!</h1>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#summer" role="button" aria-expanded="false"
+                aria-controls="summer">
+                Mostra/Nascondi
+            </a>
+        </p>
+        <hr>
+    </div>
+
+    <div id="summer" class="container my-3">
         <div class="row">
-            <h1 class="text-center">Welcome Summer!</h1>
-            <hr>
             <div class="col-6 col-md-4 col-lg-2 col-xl-2 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 12rem;">
                     <img src="https://picsum.photos/1080" class="card-img-top" alt="lorem-picsum">
@@ -380,14 +402,23 @@
     </div>
 
     <!-- Last minute -->
+
+    <div class="d-flex justify-content-around">
+        <h1 class="col-8">Last minute!</h1>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#last-min" role="button" aria-expanded="false"
+                aria-controls="last-min">
+                Mostra/Nascondi
+            </a>
+        </p>
+        <hr>
+    </div>
+
     <div id="last-min" class="container">
         <div class="row">
-            <h1>Last minute</h1>
-            <hr>
-
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1092" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -399,7 +430,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1093" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -411,7 +442,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1094" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -423,7 +454,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1095" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -435,7 +466,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1096" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -447,7 +478,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1097" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -459,7 +490,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1098" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -471,7 +502,7 @@
 
             <div class="col-6 col-md-3 col-lg-3 col-xl-3 my-2 d-flex justify-content-center">
                 <div class="card shadow" style="width: 15rem;">
-                    <img src="https://picsum.photos/1091" class="card-img-top" alt="lorem-picsum">
+                    <img src="https://picsum.photos/1099" class="card-img-top" alt="lorem-picsum">
                     <div class="card-body">
                         <h5 class="card-title">Maldive</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
