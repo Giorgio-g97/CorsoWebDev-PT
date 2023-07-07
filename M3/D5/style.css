@@ -1,0 +1,17 @@
+.custom-position {
+    position: absolute !important;
+    top: -5px;
+    left: 32px;
+}
+
+.custom-bg {
+    background-color: #7053F9;
+}
+
+.custom-color-el {
+    color: #B8A163!important;
+}
+
+.custom-bg-el {
+    background-color: #F9EEDC;
+}
