@@ -2,7 +2,7 @@
 
 proprietà `transision` serve per animare le proprietà CSS di un oggetto HTML (già visto nel modulo precedente). 
 
-Sintassi:
+## Sintassi:
 
 ![sintassi transition](https://designshack.net/wp-content/uploads/transitiondelays-1.jpg)
 
@@ -77,4 +77,62 @@ in HTML
 
 ## Transizioni Keyframe
 
-! (immagin)
+Un altro metodo per applicare animazioni sono le transizione con i `keyframes`. Servono per applicare animazioni ad un oggetto per ogni keyframe (come nei film) specificando, punto per punto, quali proprietà devono cambiare, in base chiaramente ai secondi impostati.
+
+Es.
+
+in HTML
+```
+<div class="box keyframes-transition">
+    Keyframes transition
+</div>
+```
+
+in CSS:
+
+```
+div.keyframes-transition {
+    background: lightcoral;
+}
+
+div.keyframes-transition:hover {
+    animation: bgChange; // è il nome dell'animazione keyframe
+    animation-duration: 3s;
+}
+
+@keyframes bgChange {
+    from {
+        background: lightcoral;
+    }
+    to {
+        background: lightgreen;
+    }
+}
+```
+
+## Transform
+
+Ha delle proprietà per far muovere elementi HTML (es. translate).
+In HTML:
+```
+<div class="box colored linear">
+    Linear
+</div>
+```
+
+in CSS:
+```
+.colored {
+    background: blue;
+}
+
+.box.colored {
+    margin-right: 10px;
+    transform: none; // rimane fermo
+    transition: all 3s;
+}
+
+.box.colored.linear {
+    transition-timing-function: linear;
+}
+```
