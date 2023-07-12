@@ -136,3 +136,75 @@ in CSS:
     transition-timing-function: linear;
 }
 ```
+
+in HTML creo un button per applicare il movimento del box al click del btn:
+```
+<button onclick="moveBox()">Click</button>
+```
+
+in JS creo la funzione che permette di fare il movimento appena descritto:
+```
+function moveBox(){
+    const box1 = document.getElementsByClassName('box colored')[0];
+    box1.classList.toggle('active'); // 'active' è la classe che si toglie/mettere al click
+}
+```
+
+in CSS creo la classe 'active' che muoverà il box:
+```
+.box.colored.active {
+    transform: translateX(300px, 50px) rotate(90deg) scale(2);
+}
+```
+
+in questo caso sposterà il box di 300px sull'**asse orizzontale**, 50px sull'**asse verticale**,  lo **ruoterà** di 90 gradi e lo **ingrandirà** di 2 volte rispetto la sua dimensione.
+
+Es.2 - prendiamo lo stesso box e lo duplichiamo, ma modifichiamo il timing-function in ease:
+
+in HTML aggiungiamo altro div:
+```
+<div class="box colored ease">
+    Ease
+</div>
+```
+in CSS aggiungiamo un'altra classe 'ease':
+```
+.box.colored.ease {
+    transition-timing-function: ease-in-out;
+}
+```
+chiaramente in JS aggiungiamo altro `getElementsByClassName` alla funzione precedentemente creata:
+```
+function moveBox(){
+    const box1 = document.getElementsByClassName('box colored')[0];
+    box1.classlist.toggle('active');
+    const box2 = document.getElementsByClassName('box colored')[1];
+    box2.classList.toggle('active')
+}
+```
+Stessa cosa per un box con timing-function custom:
+in HTML
+```
+<div class="box colored custom">
+    Custom
+</div>
+```
+
+in CSS:
+```
+.box.colored.custom {
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67); // tramite cubo bezier
+}
+```
+
+in JS aggiungi altro elemento:
+```
+function moveBox(){
+    const box1 = document.getElementsByClassName('box colored')[0];
+    box1.classlist.toggle('active');
+    const box2 = document.getElementsByClassName('box colored')[1];
+    box2.classList.toggle('active');
+    const box3 = document.getElementsByClassName('box colored')[2];
+    box3.classList.toggle('active');
+}
+```
