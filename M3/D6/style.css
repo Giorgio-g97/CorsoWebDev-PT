@@ -9,9 +9,28 @@
 }
 
 .custom-color-el {
-    color: #B8A163!important;
+    color: #B8A163 !important;
 }
 
 .custom-bg-el {
     background-color: #F9EEDC;
+}
+
+i.fa-regular.fa-bookmark {
+    transition: box-shadow .3s;
+    height: 12px !important;
+}
+
+i.fa-regular.fa-bookmark:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div.card {
+    transition: all .3s;
+    overflow: visible;
+}
+
+div.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
